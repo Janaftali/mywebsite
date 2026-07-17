@@ -37,7 +37,7 @@ function loadBlogPosts(amount) {
       if (!res.ok) continue;
 
       let html = await res.text();
-      html = html.replace(/src=/g, "src=../Posts/");
+      html = html.replace(/src=/g, "src=posts/");
 
       const post = document.createElement("div");
       post.classList.add("post");
