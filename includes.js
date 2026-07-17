@@ -31,7 +31,7 @@ function loadBlogPosts(amount) {
     let loadedPosts = 0;
 
     for (let i = 9; i >= 0 && loadedPosts < amount; i--) {
-      const postName = `../posts/post${i}.htm`;
+      const postName = `posts/post${i}.html`;
 
       const res = await fetch(postName);
       if (!res.ok) continue;
