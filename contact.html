@@ -1,0 +1,35 @@
+ <!DOCTYPE html>
+ <html>
+	<head>
+		<title>JNFeith</title>
+		<link rel="icon" type="image/icon" href="img/Title_image.ico"/>
+		<link rel="stylesheet" href="styles.css">
+		<script src="includes.js"></script>
+	</head>
+	<body>
+		<div include-html="header.html"> </div>
+
+		<article>
+			<div class="pageHead">
+				<img src="img/Headers/Contact.webp" alt="paper airplane"></img>
+				<h1>Contact</h1>
+			</div>
+			<h1>Neem contact op</h1>
+			<p>Vul je gegevens in om contact met mij op te nemen. Om privacyredenen deel ik geen adres, telefoon of mailadres, maar via dit formulier kun je mij een mail sturen.</p>
+			 <div class="container">
+			  <form action="action_page.php">
+
+				<label for="fname">Naam</label>
+				<input type="text" id="fname" name="firstname" placeholder="Jouw naam..">
+
+				<label for="subject">Bericht</label>
+				<textarea id="subject" name="subject" placeholder="Bericht.." style="height:200px"></textarea>
+
+				<input type="submit" value="Verstuur">
+			  </form>
+			</div> 
+		</article>
+		
+		<script> includeHTML(); </script>
+	</body>
+ </html>

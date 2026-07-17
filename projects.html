@@ -1,0 +1,86 @@
+ <!DOCTYPE html>
+ <html>
+	<head>
+		<title>JNFeith</title>
+		<link rel="icon" type="image/icon" href="img/Title_image.ico"/>
+		<link rel="stylesheet" href="styles.css">
+		<link rel="stylesheet" href="projects.css">
+		<script src="includes.js"></script>
+	</head>
+	<body>
+		<div include-html="header.html"></div>
+
+		<article>
+			<!-- <div class="pageHead">
+				<img src="img/Contact.png" alt="rising sun"></img>
+				<h1>Projecten</h1>
+			</div> -->
+			<h1>Projecten</h1>
+			<p>Hieronder zijn enkele van de projecten te zien waar ik aan heb meegewerkt in de afgelopen jaren. Klik op een project voor details.</p>
+			<div style="display: flex; flex-direction: column;">
+				<div style="width: 100%; padding: 0px 40px 40px 40px;">
+					<div id="projectFrame">
+						<div style="display: flex;">
+							<h1 style="white-space: nowrap;background-color:#ccc;">Project uitgelicht</h1>
+							<h1 style="width:100%; background-color:#ccc;"></h1>
+							<button onclick="closeProject()">×</button>
+						</div>
+						<iframe id="projectiframe" src="404.html"></iframe>
+					</div>
+				</div>
+				<div class="responsive">
+					<div class="gallery">
+						<button onclick="displayProject('https\:\/\/www.dutchnorseman.com/')">
+						<img src="img/Projects/Noorduyn_Norseman.webp" alt="Noorduyn Norseman">
+						<div class="desc">Noorduyn Norseman</div>
+						</button>				
+					</div>
+					<div class="gallery">
+						<button onclick="displayProject('projects/projectrobotics.html')">
+						<img src="img/Projects/ProjectRobotics/Project_robotica.webp" alt="Robot">
+						<div class="desc">Project robotica</div>
+						</button>
+					</div>
+					<div class="gallery">
+						<button onclick="displayProject('projects/projectmechatronics.html')">
+						<img src="img/Projects/ProjectMechatronics/Mechatronica.webp" alt="Robot arm">
+						<div class="desc">Project Mechatronica</div>
+						</button>
+					</div>
+					<div class="gallery">
+						<button onclick="displayProject('projects/Klauteraar.html')">
+						<img src="img/Projects/Klauteraar/Klauteraar.webp" alt="Klauteraar">
+						<div class="desc">Klauteraar</div>
+						</button>
+					</div>
+					<div class="gallery">
+						<button onclick="displayProject('projects/youngsolarchallenge.html')">
+						<img src="img/Projects/YoungSolarChallenge/Young_solar_challenge.webp" alt="Model">
+						<div class="desc">Young Solar Challenge</div>
+						</button>
+					</div>
+					<div class="gallery">
+						<button onclick="displayProject('Projects/tentoonstelling.html')">
+						<img src="img/Projects/Tentoonstelling/Tentoonstelling.webp" alt="Voertuigen">
+						<div class="desc">Tentoonstelling Tweede Wereldoorlog</div>
+						</button>
+					</div>
+					<div class="gallery">
+						<button onclick="displayProject('Projects/vitrine.html')">
+						<img src="img/Projects/Vitrine/Vitrine.webp" alt="Vitrine">
+						<div class="desc">Vitrine sterrenwacht Overveen</div>
+						</button>
+					</div>
+					<div class="gallery">
+						<button onclick="displayProject('projects/opsliedteksten.html')">
+						<img src="img/Projects/OPSliedteksten/Producer.webp" alt="">
+						<div class="desc">OPS liedteksten</div>
+						</button>
+					</div>
+				</div>
+			</div>
+		</article>
+		
+		<script> includeHTML(); </script>
+	</body>
+ </html>

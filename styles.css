@@ -1,0 +1,230 @@
+:root {
+  --navbar-width: 200px;
+  --header-height: 100px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #2291E3;
+  font-family: Arial;
+  padding-top: var(--header-height);
+  margin: 0;
+}
+
+nav {
+  padding: 0px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #e6e4e4;
+  width: var(--navbar-width);
+  min-width: 150px;
+  height: 100vh; /* Full height */
+  position: fixed; /* Make it stick, even on scroll */
+  overflow: auto; /* Enable scrolling if the sidenav has too much content */
+}
+.navButton {
+  display: block;
+  font-weight: bold;
+  font-size: 20px;
+  color: black;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-left: 5px solid rgb(61, 61, 61);
+}
+
+.navButton:hover {
+  background-color: grey;
+}
+
+header{
+  display: flex;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  top: 0;
+  left: 0;
+
+	height: var(--header-height);
+	color: rgb(255, 255, 255);
+	background-color: #003399;
+  border-bottom: 10px solid rgb(255, 255, 255);
+}
+
+.language{
+  display: none; /* display: flex to enable*/
+  margin:30px;
+  align-items: center;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+  height: 100%;
+}
+
+#logo{
+  height: var(--header-height);
+  margin-left: 20px;
+}
+
+.flag{
+  height: 20px;
+  width: 35px;
+  margin: 5px;
+  border: 1px solid black;
+  image-rendering: crisp-edges;
+}
+
+li{
+  font-size: 20px;
+}
+
+button{
+  border: 0px;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: grey;
+}
+
+#siteTitle{
+  margin: 0px 30px 0px 30px;
+  font-size: 300%;
+}
+
+.pageHead{
+  position: relative;
+  z-index: -1;
+  display: block;
+}
+.pageHead img{
+  display: block;
+  width: 100%;
+}
+
+.pageHead h1{
+	position: absolute;
+	font-size: 5vw;
+	color: rgb(255, 255, 255);
+  background-color: rgba(0, 0, 0, 0.419);
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h1{
+	margin-left: var(--navbar-width)
+}
+
+article{
+  padding-left: var(--navbar-width);
+  width: 100%;
+}
+
+article h1 {
+  color: black;
+  background-color: white;
+  margin: 0;
+  padding: 20px;
+  padding-left: 40px;
+  font-family: Arial;
+}
+
+article p {
+	color: black;
+  padding:10px;
+	font-size: 20px;
+}
+
+table,th,td{
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 5px;
+  background-color: white;
+}
+
+th{
+  background-color: #003399;
+  color: white;
+  width: 300px;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: white;
+  border: 1px solid black; /* Gray border */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  color: black;
+  padding: 12px 20px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #ccc;
+}
+
+.post {
+  display: flex;
+  margin: 20px;
+  padding: 10px;
+  background-color: white;
+}
+.post-container{  display: flex; }
+
+.post h1{
+  padding: 0;
+}
+.post-date{
+  margin: 0;
+  size: 7px;
+  font-weight: bold;
+  display: block;
+}
+.post img{
+  margin: 5px;
+  border: 1px solid black;
+  width: 300px;
+}
+.post p{
+  color: black;
+}
+
+#blog-referal{
+  text-align: center;
+}
+
+.container {
+  padding: 20px;
+  width: 80%;
+}
+
+@media only screen and (max-width: 1000px) {
+  .post {display: block;}
+  :root {  --navbar-width: 150px;}
+}
+
+@media only screen and (max-width: 700px) {
+  .post img{width: 50vw;}
+}

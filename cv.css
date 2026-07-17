@@ -1,0 +1,66 @@
+/* Styling for the CV page */
+.CV{
+  float: left;
+  width: 70%;
+  margin-bottom: 20px;
+}
+.CV-item{
+  background-color: white;
+  margin: 20px 0px 0px 20px;
+  padding: 5px;
+}
+.CV-item h1{
+  color: rgb(56, 164, 190);
+}
+
+.CV-item hr{ margin-left: 20px;}
+
+.CV-item h3{
+  margin: 10px 0 0 0;
+}
+.CV-item p{
+  margin: 0px;
+  padding: 5px;
+}
+
+.CV-item img{
+  width: 100%;
+  height: auto;
+  border: 2px solid rgb(56, 164, 190);
+}
+
+.CV-item a{
+  color: black;
+}
+
+.skill-list{
+  list-style-type: circle;
+  list-style-position: inside;
+}
+
+.CV-date{
+  color: rgb(56, 164, 190);
+  margin: 0px;
+  font-weight: bold;
+}
+
+.CV-info{
+  width: 30%;
+  padding-right: 20px;
+  float: right;
+}
+
+.CV-item progress{
+    width: 80%;
+}
+
+@media only screen and (max-width: 1000px) {
+  .CV{width: 50%;}    
+  .CV-info{ width: 50%;}
+}
+
+@media only screen and (max-width: 700px) {
+  .CV{width: 100%;padding-right: 20px;}
+  .CV-item h1{font-size: 5vw;}
+  .CV-info{ width: 100%; display:block;}
+}

@@ -1,0 +1,30 @@
+ <!DOCTYPE html>
+ <html>
+	<head>
+		<title>JNFeith | </title>
+		<link rel="icon" type="image/icon" href="img/Title_image.ico"/>
+		<link rel="stylesheet" href="styles.css">
+		<script src="includes.js"></script>
+	</head>
+
+	<body>
+		<div include-html="header.html"> </div>
+
+		<article>
+			<div class="pageHead">
+				<img src="img/Headers/Blog.webp" alt="notebook"></img>
+				<h1>Blog</h1>
+			</div>
+			<h1>Blog</h1>
+            <p>Alle blog posts zijn hier te vinden.</p>
+
+			<div id="blog"></div>
+
+		</article>
+		
+		<script>
+			includeHTML();
+			loadBlogPosts(10);
+		</script>
+	</body>
+ </html>
