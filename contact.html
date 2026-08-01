@@ -9,27 +9,30 @@
 	<body>
 		<div include-html="header.html"> </div>
 
+
 		<article>
 			<div class="pageHead">
-				<img src="img/Headers/Contact.webp" alt="paper airplane"></img>
+				<img src="../img/Headers/Contact.webp" alt="paper airplane"></img>
 				<h1>Contact</h1>
 			</div>
 			<h1>Neem contact op</h1>
 			<p>Vul je gegevens in om contact met mij op te nemen. Om privacyredenen deel ik geen adres, telefoon of mailadres, maar via dit formulier kun je mij een mail sturen.</p>
-			 <div class="container">
-			  <form action="action_page.php">
+			<div class="container">
+			  	<form action="form-process.php" method="POST" class="formcarry-form">
+					<label for="name">Your Name</label>
+					<input type="text" id="name" name="fullName" required />
 
-				<label for="fname">Naam</label>
-				<input type="text" id="fname" name="firstname" placeholder="Jouw naam..">
+					<label for="email">Your Email Address</label>
+					<input type="email" id="email" name="email" required />
 
-				<label for="subject">Bericht</label>
-				<textarea id="subject" name="subject" placeholder="Bericht.." style="height:200px"></textarea>
+					<label for="message">Your Message</label>
+					<textarea name="message" id="message" cols="30" rows="10"></textarea>
 
-				<input type="submit" value="Verstuur">
-			  </form>
+					<button type="submit">Send</button>
+				</form>
 			</div> 
 		</article>
-		
+	
 		<script> includeHTML(); </script>
 	</body>
  </html>
