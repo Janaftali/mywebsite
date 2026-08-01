@@ -58,7 +58,7 @@ header{
 }
 
 .language{
-  display: flex; /* display: flex to enable*/
+  display: none; /* display: flex to enable*/
   margin:30px;
   align-items: center;
 }
