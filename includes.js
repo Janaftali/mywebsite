@@ -31,13 +31,13 @@ function loadBlogPosts(amount) {
     let loadedPosts = 0;
 
     for (let i = 9; i >= 0 && loadedPosts < amount; i--) {
-      const postName = `posts/post${i}.html`;
+      const postName = `../posts/post${i}.html`;
 
       const res = await fetch(postName);
       if (!res.ok) continue;
 
       let html = await res.text();
-      html = html.replace(/src=/g, "src=posts/");
+      html = html.replace(/src=/g, "src=../posts/");
 
       const post = document.createElement("div");
       post.classList.add("post");
