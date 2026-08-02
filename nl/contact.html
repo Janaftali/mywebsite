@@ -2,7 +2,7 @@
  <html>
 	<head>
 		<title>JNFeith</title>
-		<link rel="icon" type="image/icon" href="../img/Title_image.ico"/>
+		<link rel="icon" type="image/icon" href="../img/icons/Title_image.ico"/>
 		<link rel="stylesheet" href="../styles.css">
 		<script src="../includes.js"></script>
 		<script src="https://forminit.com/sdk/v1/forminit.js"></script>
@@ -22,7 +22,7 @@
 					<input name="fi-sender-firstName" placeholder="Naam" />
 					<input type="email" name="fi-email" placeholder="Email" />
 					<textarea name="fi-text-message" placeholder="Bericht"></textarea>
-					<button type="submit">Send</button>
+					<button type="submit">Verstuur</button>
 					<p id="form-status"></p>
 				</form>
 			</div> 
@@ -44,7 +44,7 @@
 				return;
 				}
 
-				status.textContent = "Message sent successfully!";
+				status.textContent = "Bericht succesvol verstuurd!";
 				e.target.reset();
 			});
 		</script>
