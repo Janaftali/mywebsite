@@ -46,9 +46,63 @@ div.desc {
   text-decoration: none;
   color: black;
 }
+#navbuttons{
+  display: flex;
+  justify-content: space-evenly;
+}
+.scroll-button{
+  color: black;
+  border: 1px solid black;
+  background-color: #ddd;
+  font-size: 20px;
+  text-align: center;
+  padding: 15px;
+  margin: 10px;
+  text-decoration: none;
+  width: 200px;
+}
+.scroll-button:hover{ background-color: gray;}
 
-* {
-  box-sizing: border-box;
+.scroll-button img{
+  float: left;
+  width: 30px; 
+  height: 30px;
+}
+
+.link-list{
+  margin: 20px;
+  border: 0;
+  padding: 0%;
+  list-style-position: inside;
+  list-style-type: none;
+}
+.link-list li{
+  background-color: #ddd;
+  margin: 10px;
+}
+.link-list a{
+  display: inline-block;
+  width: 100%;
+  color: black;
+  border: 1px solid black;
+  text-decoration: none;
+  padding: 5px;
+}
+.link-list a:hover{
+  background-color: grey;
+  color: blue;
+  text-decoration: underline;
+}
+.link-list img{
+  vertical-align: middle;
+  margin: 5px;
+  width: 40px;
+  height: 40px;
+}
+.link-list p{ 
+  display: inline-block;
+  padding: 5px;
+  margin: 5px;
 }
 
 .responsive {
