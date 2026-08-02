@@ -1,6 +1,6 @@
 :root {
   --navbar-width: 200px;
-  --header-height: 100px;
+  --header-height: 75px;
 }
 
 * {
@@ -22,7 +22,7 @@ nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  background-color: #e6e4e4;
+  background-color: #ddd;
   width: var(--navbar-width);
   min-width: 150px;
   height: 100vh; /* Full height */
@@ -38,9 +38,20 @@ nav ul {
   text-decoration: none;
   border-left: 5px solid rgb(61, 61, 61);
 }
-
 .navButton:hover {
   background-color: grey;
+}
+
+#bottom-nav{
+  position:fixed;
+  width: var(--navbar-width);
+  bottom: 20px;
+}
+
+#go-up{
+  display: block;
+  padding: 10px;
+  font-size: 15px;
 }
 
 header{
@@ -99,7 +110,7 @@ button:hover {
 
 #siteTitle{
   margin: 0px 30px 0px 30px;
-  font-size: 300%;
+  font-size: 250%;
 }
 
 .pageHead{
@@ -193,6 +204,11 @@ button[type=submit]:hover {
   background-color: white;
 }
 .post-container{  display: flex; }
+
+.flex-container{
+  display: flex;
+  justify-content: space-between;
+}
 
 .post h1{
   padding: 0;
