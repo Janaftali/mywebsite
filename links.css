@@ -4,13 +4,13 @@
 
 div.youtube {
   margin: 5%;
-  border: 2px solid #ccc;
-  background-color: white;
+  border: 1px solid black;
+  background-color: #ddd;
   overflow: hidden;
 }
 
 div.youtube:hover {
-  border: 2px solid grey;
+  background-color: grey;
 }
 
 div.youtube img {
