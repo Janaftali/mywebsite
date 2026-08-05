@@ -56,15 +56,30 @@ function setLanguage(lang){
 }
 
 function activePage(){
+  console.log("test");
   var currentPage = location.href.split("/").slice(-1).toString();
   var navButtons = document.getElementsByClassName("navButton");
   console.log(navButtons.length)
   for (i = 0; i < navButtons.length; i++) {
-    button = navButtons[i].outerHTML;
+    link = navButtons[i].href;
     
-    if (currentPage.test(button)==true){
-      console.log("true")
+    if (currentPage==link){
+      console.log(currentPage)
     }
+  }
+}
+
+function dropdown(content){
+  console.log(content)
+  var x = document.getElementById(content)
+  var y = document.getElementById("dropdown-"+content)
+  if (x.style.display === "none") {
+    x.style.display = "block";
+    y.innerHTML = y.innerHTML.replace("◁", "▽")
+  
+  } else {
+    x.style.display = "none";
+    y.innerHTML = y.innerHTML.replace("▽", "◁");
   }
 }
 
@@ -86,4 +101,12 @@ function closeProject(){
 function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-} 
+}
+
+function restartGif(imgElement) { 
+  let element = document.getElementById(imgElement);
+  if (element) {
+     var imgSrc = element.src;
+     element.src = imgSrc; 
+  }
+}
