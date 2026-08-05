@@ -105,6 +105,7 @@ function topFunction() {
 
 function restartGif(imgElement) { 
   let element = document.getElementById(imgElement);
+  console.log('GIF reloaded.');
   if (element) {
      var imgSrc = element.src;
      element.src = imgSrc; 
