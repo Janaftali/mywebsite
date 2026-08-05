@@ -10,7 +10,7 @@
 	<body>
 		<div include-html="header.html"> </div>
 		<div class="pageHead">
-			<img src="../img/Headers/contact.gif" alt="paper airplane"></img>
+			<img src="../img/Headers/contact.gif" alt="paper airplane" id="contact"></img>
 			<h1>Contact</h1>
 		</div>
 		<article>
@@ -49,6 +49,10 @@
 			});
 		</script>
 
-		<script> includeHTML(); </script>
+		<script> 
+			includeHTML(); 
+			restartGIF('logo'); 
+			restartGIF('contact');
+		</script>
 	</body>
  </html>
