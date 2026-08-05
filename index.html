@@ -6,20 +6,7 @@
   <meta http-equiv="refresh" content="0; url=/nl/" />
   <script>
     (function () {
-      const supported = {
-        'nl': '/nl/index.html',
-      };
-
-      const lang = (navigator.language || '').toLowerCase(); // e.g. "en-US", "nl-NL", "de-DE"
-
-      const exact = supported[lang];
-      const primary = lang.split('-')[0];
-      const prefix = supported[primary];
-
-      // Default to Dutch if no match is found
-      const target = exact || prefix || supported.nl;
-
-      window.location.replace(target);
+      window.location.replace('/nl/index.html');
     })();
   </script>
 </head>
