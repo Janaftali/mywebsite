@@ -1,0 +1,183 @@
+body {
+  background-color: #2291E3;
+  font-family: Arial;
+  padding-top: var(--header-height);
+  margin: 0;
+}
+
+.pageHead{
+  position: relative;
+  z-index: -1;
+  display: block;
+}
+.pageHead img{
+  display: block;
+  width: 100%;
+}
+
+.pageHead h1{
+	position: absolute;
+	font-size: 5vw;
+	color: rgb(255, 255, 255);
+  background-color: rgba(0, 0, 0, 0.419);
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+article h1 {
+  color: black;
+  background-color: white;
+  margin: 0;
+  padding: 20px;
+  padding-left: 40px;
+  font-family: Arial;
+}
+
+article p {
+	color: black;
+  padding:10px;
+	font-size: 20px;
+}
+
+#projectFrame{
+  display: none;
+  width: 100%;
+  height: 1000px;
+  border: 5px solid #ccc;
+}
+
+#projectiframe{
+  width: 100%;
+  height: 100%;
+  border: 0px;
+  padding-bottom: 80px;
+}
+
+#projectFrame button{
+  background-color:#ccc;
+  color: Black;
+  height: 80px;
+  aspect-ratio: 1/1;
+  font-size: 60px;;
+}
+#projectFrame button:hover{
+  background-color: red;
+  color:white;
+}
+
+.ImageRow3{
+  width: 33.3%;
+}
+
+.ImageRow2{
+  width: 50%;
+}
+
+div.gallery {
+  border: 2px solid #ccc;
+  background-color: white;
+  margin: 10px;
+}
+
+div.gallery:hover {
+  border: 2px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+.gallery button{
+  width: 100%;
+  padding: 0px;
+  text-decoration: none;
+  color: black;
+  background-color: white;
+}
+
+.grid-row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.grid-column {
+  flex: 33.3%;
+  max-width: 33.3%;
+  padding: 0 4px;
+}
+
+.grid-column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#fullwidth-video{
+  margin: 20px;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.responsive {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+
+.imagecontainer{
+  display: flex;
+}
+
+@media only screen and (max-width: 1000px) {
+  .grid-column {
+    flex: 50%;
+    max-width: 50%;
+  }
+  .responsive {
+    grid-template-columns: 50% 50%;
+  }
+  .grid-column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    grid-template-columns: 100%;
+  }
+  .grid-column {
+    flex: 100%;
+    max-width: 100%;
+  }
+  .responsive {
+    width: 100%;
+  }
+  .ImageRow2{
+  width: 100%;
+  }
+  .ImageRow3{
+  width: 100%;
+  }
+  .imagecontainer{
+    flex-direction:column;
+  }
+}
