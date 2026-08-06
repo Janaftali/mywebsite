@@ -9,6 +9,7 @@
 	</head>
 	<body>
 		<div include-html="header.html"></div>
+		<div class="content">
 		<div class="pageHead">
 			<img src="../img/Headers/projects.webp" alt="me working on airplane"></img>
 			<h1>Projecten</h1>
@@ -16,69 +17,82 @@
 		<article>
 			<h1>Projecten</h1>
 			<p>Hieronder zijn enkele van de projecten te zien waar ik aan heb meegewerkt in de afgelopen jaren. Klik op een project voor details.</p>
-			<div style="display: flex; flex-direction: column;">
-				<div style="width: 100%; padding: 0px 40px 0px 40px;">
-					<div id="projectFrame">
-						<div style="display: flex;">
-							<h1 style="white-space: nowrap;background-color:#ccc;">Project uitgelicht</h1>
-							<h1 style="width:100%; background-color:#ccc;"></h1>
-							<button onclick="closeProject()">×</button>
-						</div>
-						<iframe id="projectiframe" src="404.html"></iframe>
-					</div>
+			<div class="responsive">
+				<div class="gallery">
+					<a href="#noorduyn-norseman">
+					<img src="../img/Projects/noorduyn-norseman/presentation.webp" alt="Noorduyn Norseman">
+					<div class="desc">Noorduyn Norseman</div>
+					</a>				
 				</div>
-				<div class="responsive">
-					<div class="gallery">
-						<button onclick="displayProject('projects/noorduynnorseman.html')">
-						<img src="../img/Projects/Noorduyn_Norseman.webp" alt="Noorduyn Norseman">
-						<div class="desc">Noorduyn Norseman</div>
-						</button>				
-					</div>
-					<div class="gallery">
-						<button onclick="displayProject('projects/projectrobotics.html')">
-						<img src="../img/Projects/ProjectRobotics/Project_robotica.webp" alt="Robot">
-						<div class="desc">Project robotica</div>
-						</button>
-					</div>
-					<div class="gallery">
-						<button onclick="displayProject('projects/projectmechatronics.html')">
-						<img src="../img/Projects/ProjectMechatronics/Mechatronica.webp" alt="Robot arm">
-						<div class="desc">Project Mechatronica</div>
-						</button>
-					</div>
-					<div class="gallery">
-						<button onclick="displayProject('projects/klauteraar.html')">
-						<img src="../img/Projects/Klauteraar/Klauteraar.webp" alt="Klauteraar">
-						<div class="desc">Klauteraar</div>
-						</button>
-					</div>
-					<div class="gallery">
-						<button onclick="displayProject('projects/youngsolarchallenge.html')">
-						<img src="../img/Projects/YoungSolarChallenge/Young_solar_challenge.webp" alt="Model">
-						<div class="desc">Young Solar Challenge</div>
-						</button>
-					</div>
-					<div class="gallery">
-						<button onclick="displayProject('projects/tentoonstelling.html')">
-						<img src="../img/Projects/Tentoonstelling/Tentoonstelling.webp" alt="Voertuigen">
-						<div class="desc">Tentoonstelling Tweede Wereldoorlog</div>
-						</button>
-					</div>
-					<div class="gallery">
-						<button onclick="displayProject('projects/vitrine.html')">
-						<img src="../img/Projects/Vitrine/Vitrine.webp" alt="Vitrine">
-						<div class="desc">Vitrine sterrenwacht Overveen</div>
-						</button>
-					</div>
-					<div class="gallery">
-						<button onclick="displayProject('projects/opsliedteksten.html')">
-						<img src="../img/Projects/OPSliedteksten/Producer.webp" alt="">
-						<div class="desc">OPS liedteksten</div>
-						</button>
-					</div>
+				<div class="gallery">
+					<a href="#projectrobotics">
+					<img src="../img/Projects/ProjectRobotics/Project_robotica.webp" alt="Robot">
+					<div class="desc">Project robotica</div>
+					</a>
+				</div>
+				<div class="gallery">
+					<a href="#projectmechatronics">
+					<img src="../img/Projects/ProjectMechatronics/Mechatronica.webp" alt="Robot arm">
+					<div class="desc">Project Mechatronica</div>
+					</a>
+				</div>
+				<div class="gallery">
+					<a href="#klauteraar">
+					<img src="../img/Projects/Klauteraar/Klauteraar.webp" alt="Klauteraar">
+					<div class="desc">Klauteraar</div>
+					</a>
+				</div>
+				<div class="gallery">
+					<a href="#youngsolarchallenge">
+					<img src="../img/Projects/YoungSolarChallenge/Young_solar_challenge.webp" alt="Model">
+					<div class="desc">Young Solar Challenge</div>
+					</a>
+				</div>
+				<div class="gallery">
+					<a href="#tentoonstelling">
+					<img src="../img/Projects/Tentoonstelling/Hall.webp" alt="Voertuigen">
+					<div class="desc">Tentoonstelling Tweede Wereldoorlog</div>
+					</a>
+				</div>
+				<div class="gallery">
+					<a href="#vitrine">
+					<img src="../img/Projects/Vitrine/Vitrine.webp" alt="Vitrine">
+					<div class="desc">Vitrine sterrenwacht Overveen</div>
+					</a>
+				</div>
+				<div class="gallery">
+					<a href="#dc-motor">
+					<img src="../img/Projects/dc-motor/top-view.webp" alt="">
+					<div class="desc">DC motor</div>
+					</a>
+				</div>
+				<div class="gallery">
+					<a href="#opsliedteksten">
+					<img src="../img/Projects/OPSliedteksten/Producer.webp" alt="">
+					<div class="desc">OPS liedteksten</div>
+					</a>
 				</div>
 			</div>
+			<div id="noorduyn-norseman" class="divider"></div>
+			<iframe src="projects/noorduynnorseman.html" class="testframe" onload='javascript:(function(o){o.style.height=o.contentWindow.document.body.scrollHeight+"px";}(this));'></iframe>
+			<div id="projectrobotics" class="divider"></div>
+			<iframe src="projects/projectrobotics.html"  onload='javascript:(function(o){o.style.height=o.contentWindow.document.body.scrollHeight+"px";}(this));'></iframe>
+			<div id="projectmechatronics" class="divider"></div>
+			<iframe src="projects/projectmechatronics.html"  onload='javascript:(function(o){o.style.height=o.contentWindow.document.body.scrollHeight+"px";}(this));'></iframe>
+			<div id="klauteraar" class="divider"></div>
+			<iframe src="projects/klauteraar.html"  onload='javascript:(function(o){o.style.height=o.contentWindow.document.body.scrollHeight+"px";}(this));'></iframe>
+			<div id="youngsolarchallenge" class="divider"></div>
+			<iframe src="projects/youngsolarchallenge.html"  onload='javascript:(function(o){o.style.height=o.contentWindow.document.body.scrollHeight+"px";}(this));'></iframe>
+			<div id="tentoonstelling" class="divider"></div>
+			<iframe src="projects/tentoonstelling.html"  onload='javascript:(function(o){o.style.height=o.contentWindow.document.body.scrollHeight+"px";}(this));'></iframe>
+			<div id="vitrine" class="divider"></div>
+			<iframe src="projects/vitrine.html"  onload='javascript:(function(o){o.style.height=o.contentWindow.document.body.scrollHeight+"px";}(this));'></iframe>
+			<div id="dc-motor" class="divider"></div>
+			<iframe src="projects/dc-motor.html" onload='javascript:(function(o){o.style.height=o.contentWindow.document.body.scrollHeight+"px";}(this));'></iframe>
+			<div id="opsliedteksten" class="divider"></div>
+			<iframe src="projects/opsliedteksten.html"  onload='javascript:(function(o){o.style.height=o.contentWindow.document.body.scrollHeight+"px";}(this));'></iframe>
 		</article>
+		</div>
 		
 		<script> includeHTML(); </script>
 	</body>

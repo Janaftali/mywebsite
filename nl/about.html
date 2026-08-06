@@ -10,16 +10,19 @@
 
 	<body>
 		<div include-html="header.html"> </div>
+		<div class="content">
 		<div class="pageHead">
 			<img src="../img/Headers/about.webp" alt="sunset"></img>
-			<h1>Over mij</h1>
+			<h1>Over</h1>
 		</div>
 		<article>
 			<h1>Info</h1>
+			<h2>Over</h2>
 			<div class="flex-container">
 				<div><!-- Text on the left side-->
 					<p>Ik ben Nathan en ik studeer werktuigbouwkunde aan de TU Delft. Ik hou van alles wat ook maar een beetje techniek bevat, en vindt het leuk om te leren hoe dingen werken. Dit is terug te zien in mijn hobbies en werk; Ik hou van lezen, werk graag met de 3D-printer en ben altijd aan het kijken hoe dingen in elkaar zitten. Verder sleutel ik als vrijwilliger aan een Noorduyn Norseman vliegtuig en ben ik beeldtechnicus in de kerk. </p>
-					<p>Enkele feitjes over Nathan Feith:</p>
+					<h2>Feitjes van Feith</h2>
+					<p>Enkele feitjes over mij:</p>
 					<ul>
 						<li>Geboortejaar: 2006 ⟡</li>
 						<li>Land: Nederland ⚐</li>
@@ -27,26 +30,7 @@
 						<li>Studie: Werktuigbouwkunde 🛠</li>
 						<li>Lengte: 1.90m ↕</li>
 					</ul>
-
-					<div class="dropdown">
-						<button id="dropdown-telefoon" onclick="dropdown('telefoon')"><b>Mijn telefoon ◁</b></button>
-						<div id="telefoon" style="display: none;">
-							<div style="display: flex;" >
-								<img src=../img/phone.webp alt="phone" style="width: 200px; height: 100%;"></img>
-								<p>Ik gebruik sinds 2020 geen smartphone meer en ben de trotse eigenaar van deze Nokia. Het is heerlijk rustig zonder smartphone, en als mensen mij echt nodig hebben bellen ze wel. Alle functies die een smartphone doet kan ik nog gewoon uitvoeren op mijn laptop.</p>
-							</div>
-						</div>
-					</div>
-
-					<div class="dropdown">
-						<button id="dropdown-faith" onclick="dropdown('faith')"><b>Geloofsbelijdenis ◁</b></button>
-						<div id="faith" style="display: none;">
-							<p>De onderstaande tekst, de geloofsbelijdenis van Nicea vat samen wat ik geloof als Christen:</p>
-							<ul><il><p>
-								Wij geloven in één God, de almachtige Vader, Schepper van de hemel en de aarde, van alle<br>zichtbare en onzichtbare dingen.<br>En in één Here Jezus Christus, de eniggeboren Zoon van God, geboren uit de Vader vóór alle<br>eeuwen, God uit God, Licht uit Licht, waarachtig God uit waarachtig God; geboren, niet<br>geschapen, één van wezen met de Vader; door Hem zijn alle dingen geworden.<br>Ter wille van ons mensen en van ons behoud is Hij neergedaald uit de hemel en vlees<br>geworden door de Heilige Geest uit de maagd Maria en is een mens geworden. Hij is ook<br>voor ons gekruisigd onder Pontius Pilatus, heeft geleden en is begraven. Op de derde dag is<br>Hij opgestaan overeenkomstig de Schriften. Hij is opgevaren naar de hemel, zit aan de<br>rechterhand van de Vader en zal in heerlijkheid weerkomen om te oordelen de levenden en de<br>doden. En zijn rijk zal geen einde hebben.<br>En in de Heilige Geest, die Here is en levend maakt, die van de Vader en de Zoon uitgaat, die<br>samen met de Vader en de Zoon aangebeden en verheerlijkt wordt, die gesproken heeft door<br>de profeten.<br>En één heilige, algemene en apostolische kerk.<br>Wij belijden één doop tot vergeving van de zonden.<br>Wij verwachten de opstanding van de doden en het leven van de komende eeuw.<br>Amen.
-							</p></il></ul>
-						</div>
-					</div>
+					
 				</div>
 
 				<div style="background-color: #eee; margin: 20px; text-align: center; height: min-content; padding: 15px;"><!-- Box on the right side-->
@@ -55,7 +39,7 @@
 				</div>
 			</div>
 
-			<h1>Hobbies</h1>
+			<h2>Hobbies</h2>
 			<div class="flex-container">
 				<div>
 					<p>Ik heb vele intresses, maar dit zijn de dingen die ik het liefst doe in mijn vrije tijd:</p>
@@ -69,11 +53,11 @@
 					</ul>
 					<p>Af en toe game ik ook nog wel eens. Onder de pagina <a href="links.html#games">links</a> is een lijst met games te vinden die ik graag speel.
 				</div>
-				<img src=../img/about.gif alt="gears" style="width: 30%; height: 100%; padding: 10px;"></img>
+				<img src=../img/about.gif alt="gears" style="width: 400px; height: 100%; padding: 10px;"></img>
 			</div>
 
 
-			<h1>Sterke en zwakke punten</h1>
+			<h2>Sterke en zwakke punten</h2>
 			<p>Zelfreflectie is belangrijk. Door de jaren heen heb ik mezelf steeds beter mogen leren kennen, en op basis van die kennis is hieronder een lijstje te vinden met sterke en zwakke punten. Ongetwijfeld zouden er in beide categoriën nog veel meer punten toegevoegd kunnen worden.</p>
 			<div class="center">
 				<table>
@@ -107,9 +91,34 @@
 				<p></p>
 			</div>
 
+			<h2>Extra informatie</h2>
+			<div class="dropdown">
+				<button id="dropdown-telefoon" onclick="dropdown('telefoon')"><b>Mijn telefoon ◁</b></button>
+				<div id="telefoon" style="display: none;">
+					<div style="display: flex;" >
+						<img src=../img/phone.webp alt="phone" style="width: 200px; height: 100%;"></img>
+						<p>Ik gebruik sinds 2020 geen smartphone meer en ben de trotse eigenaar van deze Nokia. Het is heerlijk rustig zonder smartphone, en als mensen mij echt nodig hebben bellen ze wel. Alle functies die een smartphone doet kan ik nog gewoon uitvoeren op mijn laptop.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="dropdown">
+				<button id="dropdown-faith" onclick="dropdown('faith')"><b>Geloofsbelijdenis ◁</b></button>
+				<div id="faith" style="display: none;">
+					<p>De onderstaande tekst, de geloofsbelijdenis van Nicea vat samen wat ik geloof als Christen:</p>
+					<ul><il><p>
+						Wij geloven in één God, de almachtige Vader, Schepper van de hemel en de aarde, van alle<br>zichtbare en onzichtbare dingen.<br>En in één Here Jezus Christus, de eniggeboren Zoon van God, geboren uit de Vader vóór alle<br>eeuwen, God uit God, Licht uit Licht, waarachtig God uit waarachtig God; geboren, niet<br>geschapen, één van wezen met de Vader; door Hem zijn alle dingen geworden.<br>Ter wille van ons mensen en van ons behoud is Hij neergedaald uit de hemel en vlees<br>geworden door de Heilige Geest uit de maagd Maria en is een mens geworden. Hij is ook<br>voor ons gekruisigd onder Pontius Pilatus, heeft geleden en is begraven. Op de derde dag is<br>Hij opgestaan overeenkomstig de Schriften. Hij is opgevaren naar de hemel, zit aan de<br>rechterhand van de Vader en zal in heerlijkheid weerkomen om te oordelen de levenden en de<br>doden. En zijn rijk zal geen einde hebben.<br>En in de Heilige Geest, die Here is en levend maakt, die van de Vader en de Zoon uitgaat, die<br>samen met de Vader en de Zoon aangebeden en verheerlijkt wordt, die gesproken heeft door<br>de profeten.<br>En één heilige, algemene en apostolische kerk.<br>Wij belijden één doop tot vergeving van de zonden.<br>Wij verwachten de opstanding van de doden en het leven van de komende eeuw.<br>Amen.
+					</p></il></ul>
+				</div>
+			</div>
+		</article>
+		<div class="divider"></div>
+		<article>
 			<h1 id="site-info">Deze site</h1>
+			<h2>Info</h2>
 			<p>Deze website heb ik helemaal zelf geprogrammeerd in HTML en CSS, ik ben begonnen in juli 2026. Enkele stukken code zijn aangepaste codeknipsels van <a href="https://www.w3schools.com/">w3schools</a>. Deze website heb ik vaak geraadpleegd in het maken van deze site; ik ben erg dankbaar voor het bestaan van deze uitstekende website. Geen enkele code op deze site komt direct van AI, maar AI is wel gebruikt om enkele bugs in de HTML en vooral de JavaScript code op te sporen. Voel je vrij om stukken code van deze website te gebruiken, zolang deze site maar niet als template gekopiëerd wordt.</p>
-			<p>Deze site wordt gehost op GitHub.</p>
+			<h2>Gebruikte programmas</h2>
+			<p>Deze site is vooral geprogrammeerd in VScode en wordt gehost op GitHub. De afbeeldingen zijn gemaakt of bewerkt in paint.net</p>
 			<div style="display: flex; justify-content: center; align-items: center;">
 				<a href="https://notbyai.fyi/"><img src=../img/icons/Scripted-By-a-Human-Not-By-AI-Badge-white@2x.png alt="scripted by a human, not by AI" style="height: 62px; padding: 5px;"></a>
 				<img src=../img/links/buttons/bestvieweddesktop.gif alt="best viewed on desktop" style="height: 62px; padding: 5px;"></img>
@@ -118,7 +127,7 @@
 				<a href="https://creativecommons.org/cc-licenses/"><img src=../img/links/buttons/cc-by-sa.png alt="cc-by-sa" style="height: 62px; padding: 5px;"></img></a>
 			</div>
 		</article>
-
+		</div>
 		<script>
 			includeHTML();
 		</script>
