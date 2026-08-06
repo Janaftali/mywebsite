@@ -11,6 +11,8 @@ div.youtube {
 
 div.youtube:hover {
   background-color: grey;
+  transform: scale(1.1);
+  transition: 0.1s;
 }
 
 div.youtube img {
@@ -61,7 +63,11 @@ div.desc {
   text-decoration: none;
   width: 200px;
 }
-.scroll-button:hover{ background-color: gray;}
+.scroll-button:hover{ 
+  background-color: gray;
+  transform: scale(1.1);
+  transition: 0.1s;
+}
 
 .scroll-button img{
   float: left;
@@ -89,9 +95,11 @@ div.desc {
   padding: 5px;
 }
 .link-list a:hover{
+  transform: scale(1.02, 1.1);
   background-color: grey;
-  color: blue;
+  color: white;
   text-decoration: underline;
+  transition: 0.1s;
 }
 .link-list img{
   vertical-align: middle;

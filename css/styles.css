@@ -7,17 +7,11 @@
   box-sizing: border-box;
 }
 
-/*@keyframes slideUp{
-  from {transform: translate(00vw, 100vw);}
-  to {transform: translate(0px, 0px);}
-}*/
-
 body {
   background-image: url(background.png);
   background-size: 80px;
   background-position: var(--navbar-width);
-  font-family: Arial;
-  padding-top: var(--header-height);
+  font-family: Bahnschrift, Arial;
   margin: 0;
 }
 
@@ -26,16 +20,17 @@ nav {
 }
 
 nav ul {
+  position: fixed;
+  width: var(--navbar-width);
   list-style-type: none;
   margin: 0;
   padding: 0;
-  background-color: #ddd;
-  width: var(--navbar-width);
-  min-width: 150px;
   height: 100vh; /* Full height */
-  position: fixed; /* Make it stick, even on scroll */
-  overflow: auto; /* Enable scrolling if the sidenav has too much content */
+  background-color: #ddd;
+  min-width: 150px;
+  z-index: 10;
 }
+
 .navButton {
   display: block;
   font-weight: bold;
@@ -49,10 +44,30 @@ nav ul {
   background-color: grey;
 }
 
+.dropdown-nav{
+  position: relative;
+}
+.dropdown-menu{
+  display: none;
+  background-color: white;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 100%;
+}
+.dropdown-menu a{
+  display: block;
+}
+
+.dropdown-nav:hover .dropdown-menu{
+  display: block;
+}
+
 #bottom-nav{
-  position:fixed;
+  position: fixed;
   width: var(--navbar-width);
   bottom: 0px;
+  z-index: 15;
 }
 
 #go-up{
@@ -64,11 +79,10 @@ nav ul {
 header{
   display: flex;
   position: fixed;
-  z-index: 1000;
   width: 100%;
   top: 0;
   left: 0;
-
+  z-index: 100;
 	height: var(--header-height);
 	color: rgb(255, 255, 255);
 	background-color: #003399;
@@ -122,13 +136,18 @@ button:hover {
 #siteTitle{
   margin: 0px 30px 0px 30px;
   font-size: 250%;
+  font-family: Bahnschrift, Arial;
+}
+
+.content{
+  margin-top:var(--header-height);
+  margin-left: var(--navbar-width);
 }
 
 .pageHead{
-  margin-left: var(--navbar-width);
   position: relative;
-  z-index: -1;
   display: block;
+  z-index: -1;
 }
 .pageHead img{
   display: block;
@@ -148,6 +167,11 @@ button:hover {
   transform: translate(-50%, -100%);
 }
 
+.divider{
+  height: var(--header-height);
+  scroll-snap-align: start none;
+}
+
 .dropdown{
   display: block;
   width: fit-content;
@@ -160,11 +184,9 @@ button:hover {
 }
 
 article{
-  padding-left: var(--navbar-width);
-  width: 100%;
+  position: relative;
+  display: block;
   margin-bottom: 20px;
-  /*animation-name: slideUp;
-  animation-duration: 0.75s;*/
 }
 
 article h1 {
@@ -175,6 +197,10 @@ article h1 {
   padding: 20px;
   padding-left: 40px;
   font-family: Arial;
+}
+
+article h2{
+  margin: 5px 0px 0px 10px;
 }
 
 article p {
@@ -223,25 +249,25 @@ button[type=submit]:hover {
   background-color: #ccc;
 }
 
+.flex-container{
+  display: flex;
+  justify-content: space-between;
+}
+
 .post {
   display: flex;
   margin: 20px;
   padding: 10px;
   background-color: white;
 }
-.post-container{  display: flex; }
-.post h1{ border: none;}
-
-.flex-container{
-  display: flex;
-  justify-content: space-between;
-}
-
-.post h1{
+.post h2{ 
+  border: none;
   padding: 0;
+  margin: 0;
+  font-size: 30px;
 }
 .post-date{
-  margin: 0;
+  margin: 0 0 0 10px;
   size: 7px;
   font-weight: bold;
   display: block;
@@ -249,10 +275,30 @@ button[type=submit]:hover {
 .post img{
   margin: 5px;
   border: 1px solid black;
-  width: 300px;
+  height: 200px;
+  object-fit: cover;
 }
 .post p{
   color: black;
+}
+
+.grid-row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.grid-column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.grid-column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
 }
 
 #blog-referal{
@@ -264,11 +310,27 @@ button[type=submit]:hover {
   width: 80%;
 }
 
+@media only screen and (max-width: 1200px) {
+  .grid-column {
+    flex: 33.3%;
+    max-width: 33.3%;
+  }
+}
+
 @media only screen and (max-width: 1000px) {
   .post {display: block;}
   :root {  --navbar-width: 150px;}
+  .flex-container{flex-direction: column;}
+  .grid-column {
+    flex: 50%;
+    max-width: 50%;
+  }
 }
 
 @media only screen and (max-width: 700px) {
   .post img{width: 50vw;}
+  .grid-column {
+    flex: 100%;
+    max-width: 100%;
+  }
 }
