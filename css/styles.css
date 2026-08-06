@@ -54,6 +54,7 @@ nav ul {
   position: absolute;
   top: 0;
   left: 100%;
+  box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 0.473);
 }
 .dropdown-menu a{
   display: block;
@@ -169,7 +170,6 @@ button:hover {
 
 .divider{
   height: var(--header-height);
-  scroll-snap-align: start none;
 }
 
 .dropdown{
