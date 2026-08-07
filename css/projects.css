@@ -3,19 +3,16 @@
   margin: 0px;
 }
 
-.project{
-  overflow: hidden;
-}
+
 
 iframe{
+  display: block;
   width:100%;
   border:none;
   overflow:hidden;
   border-top: 2px solid black;
 }
-#scroll{
-  scroll-snap-type: y mandatory;
-}
+
 
 .ImageRow3{
   width: 33.3%;
@@ -91,13 +88,7 @@ iframe{
     grid-template-columns: 100%;
   }
   
-  .responsive {
-    width: 100%;
-  }
-  .ImageRow2{
-  width: 100%;
-  }
-  .ImageRow3{
+  .responsive , .ImageRow2, .ImageRow3{
   width: 100%;
   }
   .imagecontainer{

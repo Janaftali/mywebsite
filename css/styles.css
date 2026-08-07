@@ -42,6 +42,8 @@ nav ul {
 }
 .navButton:hover {
   background-color: grey;
+  border-left: 15px solid rgb(61, 61, 61);
+  transition: 0.2s;
 }
 
 .dropdown-nav{
@@ -308,6 +310,15 @@ button[type=submit]:hover {
 .container {
   padding-left: 20px;
   width: 80%;
+}
+.buttonwall{
+  text-align: center;
+}
+
+.button{
+  height: 50px; margin: 5px;
+  display: inline;
+  image-rendering: pixelated;
 }
 
 @media only screen and (max-width: 1200px) {

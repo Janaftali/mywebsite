@@ -32,6 +32,10 @@
 .CV-item a{
   color: black;
 }
+.CV-item a:hover{
+  font-weight: bold;
+}
+
 .CV-item progress{
     width: 80%;
 }
