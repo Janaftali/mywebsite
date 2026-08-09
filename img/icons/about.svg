@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+
+<svg
+   width="733.33331"
+   height="733.33331"
+   viewBox="0 0 21.999999 21.999999"
+   version="1.1"
+   id="svg2"
+   sodipodi:docname="about.svg"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="namedview2"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:zoom="0.78400464"
+     inkscape:cx="336.09495"
+     inkscape:cy="480.22675"
+     inkscape:window-width="1920"
+     inkscape:window-height="1129"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g2" />
+  <title
+     id="title1" />
+  <g
+     id="Complete"
+     transform="translate(-1,-1)">
+    <g
+       id="info-circle">
+      <g
+         id="g2">
+        <circle
+           cx="12"
+           cy="12"
+           data-name="--Circle"
+           fill="none"
+           id="_--Circle"
+           r="10"
+           stroke="#000000"
+           stroke-linecap="round"
+           stroke-linejoin="round"
+           stroke-width="2"
+           style="display:inline" />
+        <line
+           fill="none"
+           stroke="#000000"
+           stroke-linecap="round"
+           stroke-linejoin="round"
+           stroke-width="2"
+           x1="11.875"
+           x2="11.875"
+           y1="9.1683846"
+           y2="19.022942"
+           id="line1"
+           style="display:inline;stroke-width:2.35775;stroke-linecap:butt;stroke-dasharray:none" />
+        <line
+           fill="none"
+           stroke="#000000"
+           stroke-linecap="round"
+           stroke-linejoin="round"
+           stroke-width="2"
+           x1="11.875"
+           x2="11.875"
+           y1="6.4699998"
+           y2="6.4699998"
+           id="line2" />
+      </g>
+    </g>
+  </g>
+</svg>
