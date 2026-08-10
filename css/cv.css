@@ -23,7 +23,7 @@
   padding: 5px;
 }
 
-.CV-item img{
+#picture{
   width: 100%;
   height: auto;
   border: 2px solid rgb(56, 164, 190);

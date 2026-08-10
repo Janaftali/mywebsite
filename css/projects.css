@@ -47,9 +47,20 @@ iframe{
 }
 
 .desc {
-  margin:10px;
+  margin: 10px 0 10px 0px;
   font-size: 20px;
   text-align: center;
+}
+.gallery .info{
+  padding: 0;
+  margin: 0;
+  font-size: 15px;
+  text-align: center;
+}
+.info .icon{
+  vertical-align: middle;
+  height: 20px;
+  width: fit-content;
 }
 
 
