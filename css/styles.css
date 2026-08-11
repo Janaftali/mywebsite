@@ -52,7 +52,7 @@ nav ul {
 .dropdown-menu{
   display: none;
   background-color: white;
-  width: 100%;
+  width: max-content;
   position: absolute;
   top: 0;
   left: 100%;
@@ -111,16 +111,21 @@ header{
   margin-left: 20px;
 }
 
+
 .icon{
   height: 20px;
+  width: 20px;
+  object-fit: contain;
 }
+p .icon{ vertical-align: middle;}
+
 
 .flag{
-  height: 20px;
+  height: 21px;
   width: 35px;
+  padding: 0;
   margin: 5px;
   border: 1px solid black;
-  image-rendering: crisp-edges;
 }
 
 li{
@@ -343,5 +348,8 @@ button[type=submit]:hover {
   .grid-column {
     flex: 100%;
     max-width: 100%;
+  }
+  .dropdown-nav:hover .dropdown-menu{
+  display: none;
   }
 }
