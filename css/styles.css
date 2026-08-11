@@ -27,8 +27,10 @@ nav ul {
   padding: 0;
   height: 100vh; /* Full height */
   background-color: #ddd;
-  min-width: 150px;
   z-index: 10;
+}
+nav ul li p{
+  display: inline;
 }
 
 .navButton {
@@ -352,4 +354,16 @@ button[type=submit]:hover {
   .dropdown-nav:hover .dropdown-menu{
   display: none;
   }
+  nav ul li p{
+  display: none;
+  }
+  :root {
+  --navbar-width: 60px;
+  }
+  #bottom-nav{
+    display: none;
+  }
+  .pageHead h1{
+	font-size: 12vw;
+}
 }
