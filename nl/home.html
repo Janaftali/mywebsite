@@ -1,6 +1,7 @@
- <!DOCTYPE html>
- <html>
+<!DOCTYPE html>
+<html lang="nl">
 	<head>
+		<meta charset="utf-8">
 		<title>JNFeith</title>
 		<link rel="icon" type="image/icon" href="/img/icons/Title_image.ico"/>
 		<link rel="stylesheet" href="/css/styles.css">
@@ -12,34 +13,37 @@
 	<body>
 		<div include-html="/nl/header.html"> </div>
 		<div class="content">
-			<div class="pageHead">
-				<img src="/img/Headers/homepage.webp" alt="rising sun">
-				<h1>Welkom!</h1>
-			</div>
-			<article>
+			<article id="homepage">
+				<div class="pageHead">
+					<img src="/img/Headers/homepage.webp" alt="rising sun">
+					<h1>Welkom!</h1>
+				</div>
 				<h1>Welkom</h1>
 				<p>Een eigen website? Is dat niet iets uit van twintig jaar geleden?
-				Ja, dat klopt, maar ik ben ook ouderwets. Omdat ik geen smartphone of sociale media heb, heb ik deze website gemaakt waar ik dingen kan delen met anderen. Op deze website is informatie te vinden die ik publiekelijk wil delen <a href="about.html">over mij</a> en mijn <a href="projects.html">projecten</a>. Ook staat mijn <a href="cv.html">CV</a> op deze site en is er de mogelijkheid om <a href="contact.html">contact</a> met mij op te nemen.</p>
+				Ja, dat klopt, maar ik ben ook ouderwets. Omdat ik geen smartphone of sociale media heb, heb ik deze website gemaakt waar ik dingen kan delen met anderen. Op deze website is informatie te vinden die ik publiekelijk wil delen <a href="about.html" title="Lees meer over mij">over mij</a> en mijn <a href="projects.html" title="Ga naar projecten">projecten</a>. Ook staat mijn <a href="cv.html" title="Mijn CV">CV</a> op deze site en is er de mogelijkheid om <a href="contact.html" title="Neem contact op">contact</a> met mij op te nemen.</p>
+			</article>
+			
+			<article>
 				
 				<h1>Uitgelichte projecten</h1>
 				<div id="slideshow">
 					<div id="slider">
 						<div class="slideshow-slide">
-							<a href="/nl/projects/noorduynnorseman.html"><img src="/img/Projects/noorduyn-norseman/presentation.webp"></a>
+							<a href="/nl/projects/noorduynnorseman.html" title="Lees meer"><img src="/img/Projects/noorduyn-norseman/presentation.webp"></a>
 							<p class="slideshow-caption">Noorduyn Norseman</p>
 						</div>
 						<div class="slideshow-slide" style="display: none;">
-							<a href="/nl/projects/tentoonstelling.html"><img src="/img/Projects/Tentoonstelling/Hall.webp"></a>
+							<a href="/nl/projects/tentoonstelling.html"><img src="/img/Projects/Tentoonstelling/Hall.webp" title="Lees meer"></a>
 							<p class="slideshow-caption">Tentoonstelling WO2</p>
 						</div>
 						<div class="slideshow-slide">
-							<a href="/nl/projects/youngsolarchallenge.html"><img src="/img/Projects/YoungSolarChallenge/Young_solar_challenge.webp"></a>
+							<a href="/nl/projects/youngsolarchallenge.html"><img src="/img/Projects/YoungSolarChallenge/Young_solar_challenge.webp" title="Lees meer"></a>
 							<p class="slideshow-caption">Young Solar Challenge</p>
 						</div>
 					</div>
 					
-					<a id="prev-slide" onclick="plusSlides(-1, 'prev')">&lt</a>
-					<a id="next-slide" onclick="plusSlides(1, 'next')">&gt</a>
+					<a id="prev-slide" onclick="plusSlides(-1, 'prev')" title="Vorige slide">❮</a>
+					<a id="next-slide" onclick="plusSlides(1, 'next')" title="Volgende slide">❯</a>
 				</div>
 				<div id="slideshow-dot-container">
 					<span class="slideshow-dot" onclick="currentSlide(1)"></span>
@@ -50,7 +54,7 @@
 				<h1>Recente blogposts</h1>
 				<div id="blog"></div>
 
-				<p id="blog-referal">Oudere posts zijn te vinden op de <a href="blog.html">blog</a> pagina.</p>
+				<p id="blog-referal">Oudere posts zijn te vinden op de <a href="blog.html" title="Ga naar de blog">blog</a> pagina.</p>
 			</article>
 		</div>
 
