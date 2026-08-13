@@ -152,6 +152,7 @@ button:hover {
 .content{
   margin-top:var(--header-height);
   margin-left: var(--navbar-width);
+  overflow:hidden;
 }
 
 .pageHead{
