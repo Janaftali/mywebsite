@@ -6,13 +6,28 @@
   <meta http-equiv="refresh" content="0; url=/nl/" />
   <script>
     (function () {
-      window.location.replace('/nl/home.html');
+      const supported = {
+        'en': '/en/home.html',
+        'nl': '/nl/home.html'
+      };
+
+      const lang = (navigator.language || '').toLowerCase(); // e.g. "en-US", "nl-NL", "de-DE"
+
+      const exact = supported[lang];
+      const primary = lang.split('-')[0];
+      const prefix = supported[primary];
+
+      // Default to Dutch if no match is found
+      const target = exact || prefix || supported.nl;
+
+      window.location.replace(target);
     })();
   </script>
 </head>
 <body>
+  <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=b9cd642281f4153c0729307aaa5d511c1c9972f6'></script>
   <noscript>
-    <a href="/nl/home.html">Continue to Dutch</a>
+    <a href="/en/home.html">Continue to English</a>
   </noscript>
 </body>
 </html>
