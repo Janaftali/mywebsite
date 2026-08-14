@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="38.437851mm"
+   height="23.94408mm"
+   viewBox="0 0 38.437851 23.94408"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   sodipodi:docname="Logo.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="mm"
+     inkscape:zoom="3.175"
+     inkscape:cx="25.984252"
+     inkscape:cy="53.700787"
+     inkscape:window-width="1920"
+     inkscape:window-height="1129"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1">
+    <marker
+       id="CheckToolsAndOPMarker"
+       orient="auto"
+       refX="-4"
+       refY="-1.687441"
+       style="overflow:visible">
+      <path
+         d="m 4.588864,-1.687441 v 0 L 9.177728,0 c -0.73311,-0.996261 -0.728882,-2.359329 0,-3.374882"
+         style="fill:#000044;fill-rule:evenodd;stroke:none"
+         id="path45" />
+    </marker>
+    <marker
+       id="DrawCurveMarker"
+       orient="auto"
+       refX="-4"
+       refY="-1.687441"
+       style="overflow:visible">
+      <path
+         d="m 4.588864,-1.687441 v 0 L 9.177728,0 c -0.73311,-0.996261 -0.728882,-2.359329 0,-3.374882"
+         style="fill:#000044;fill-rule:evenodd;stroke:none"
+         id="path46" />
+    </marker>
+    <marker
+       id="DrawCurveMarker_r"
+       orient="auto"
+       refX="4"
+       refY="-1.687441"
+       style="overflow:visible">
+      <path
+         d="m -4.588864,-1.687441 v 0 L -9.177728,0 c 0.73311,-0.996261 0.728882,-2.359329 0,-3.374882"
+         style="fill:#000044;fill-rule:evenodd;stroke:none"
+         id="path47" />
+    </marker>
+    <marker
+       id="InOutPathMarker"
+       orient="auto"
+       refX="-4"
+       refY="-1.687441"
+       style="overflow:visible">
+      <path
+         d="m 4.588864,-1.687441 v 0 L 9.177728,0 c -0.73311,-0.996261 -0.728882,-2.359329 0,-3.374882"
+         style="fill:#0072a7;fill-rule:evenodd;stroke:none"
+         id="path48" />
+    </marker>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       id="text1"
+       style="font-weight:bold;font-size:22.9211px;line-height:0.8;font-family:Bahnschrift;-inkscape-font-specification:'Bahnschrift Bold';text-align:center;text-anchor:middle;display:inline;fill:#1a1a1a;fill-opacity:1;stroke:none;stroke-width:0.76483;stroke-opacity:1"
+       d="m 14.92146,16.8186 c 0,2.26063 -0.607483,4.01337 -1.822448,5.25821 -1.205008,1.24485 -2.907951,1.86727 -5.108833,1.86727 v 0 c -1.324511,0 -2.5096,-0.25893 -3.555269,-0.77678 C 3.389243,22.64945 2.577607,21.91747 2,20.9714 l 3.346135,-2.43492 c 0.358515,0.4581 0.78674,0.81164 1.284677,1.06061 0.507895,0.24898 1.035709,0.37345 1.583439,0.37345 0.786741,0 1.394224,-0.27385 1.822448,-0.8216 0.428226,-0.55768 0.642339,-1.33944 0.642339,-2.34527 V 2 h 5.551412 l 7.723,16.64106 V 2 h 14.4844 v 3.94367 l -10.653213,-10e-6 v 5.2134 h 9.010021 v 3.94367 h -9.010021 l 0.08259,8.60435 H 22.83309 L 14.781453,7.31798 Z"
+       sodipodi:nodetypes="ccssscccscsccccccccccccccc" />
+    <path
+       id="text1-3"
+       style="font-weight:bold;font-size:22.9211px;line-height:0.8;font-family:Bahnschrift;-inkscape-font-specification:'Bahnschrift Bold';text-align:center;text-anchor:middle;display:inline;fill:#0095ff;fill-opacity:1;stroke:none;stroke-width:0.76483;stroke-opacity:1"
+       d="m 12.92146,14.8186 c 0,2.26063 -0.607483,4.01337 -1.822448,5.25821 -1.205008,1.24485 -2.907951,1.86727 -5.108833,1.86727 v 0 c -1.324511,0 -2.5096,-0.25893 -3.555269,-0.77678 C 1.389243,20.64945 0.577607,19.91747 0,18.9714 l 3.346135,-2.43492 c 0.358515,0.4581 0.78674,0.81164 1.284677,1.06061 0.507895,0.24898 1.035709,0.37345 1.583439,0.37345 0.786741,0 1.394224,-0.27385 1.822448,-0.8216 0.428226,-0.55768 0.642339,-1.33944 0.642339,-2.34527 V 0 h 5.551412 l 7.723,16.64106 V 0 h 14.484401 v 3.94367 l -10.653214,-1e-5 v 5.2134 h 9.010024 v 3.94367 h -9.010024 l 0.08259,8.60435 H 20.83309 L 12.781453,5.31798 Z"
+       sodipodi:nodetypes="ccssscccscsccccccccccccccc" />
+  </g>
+</svg>
