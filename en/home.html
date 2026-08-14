@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>JNFeith</title>
+		<link rel="icon" type="image/icon" href="/img/flavico.svg"/>
+		<link rel="stylesheet" href="/css/styles.css">
+		<link rel="stylesheet" href="/css/slideshow.css">
+		<script src="/includes.js"></script>
+	</head>
+	
+
+	<body>
+		<div include-html="/en/header.html"> </div>
+		<main>
+			<article id="homepage">
+				<div class="pageHead">
+					<img src="/img/Headers/homepage.webp" alt="rising sun">
+					<h1>Welcome!</h1>
+				</div>
+				<h1>Welcome</h1>
+			<p>A personal website? Isn't that something from twenty years ago?
+			Yes, that is true, but I am very old-fashioned. I have made this website because I don't have a smartphone or any social media, but I do want to share stuff with others. You will be able to find information about myself that I wish to share publicly. Among other things, this includes information <a href="about.html" title="Read more about me">about</a> me, my <a href="projects.html" title="Go to projects">projects</a>, and my <a href="cv.html" title="My resume">resume</a>. It is also possible to <a href="contact.html" title="Contact me">contact</a> me.</p>
+			</article>
+			
+			<article>
+				
+				<h1>Featured projects</h1>
+				<div id="slideshow">
+					<div id="slider">
+						<div class="slideshow-slide">
+							<a href="/en/projects/noorduynnorseman.html" title="View project"><img src="/img/Projects/noorduyn-norseman/presentation.webp"></a>
+							<p class="slideshow-caption">Noorduyn Norseman</p>
+						</div>
+						<div class="slideshow-slide" style="display: none;">
+							<a href="/en/projects/tentoonstelling.html" title="View project"><img src="/img/Projects/Tentoonstelling/Hall.webp"></a>
+							<p class="slideshow-caption">Exhibition WW2</p>
+						</div>
+						<div class="slideshow-slide">
+							<a href="/en/projects/youngsolarchallenge.html" title="View project"><img src="/img/Projects/YoungSolarChallenge/Young_solar_challenge.webp"></a>
+							<p class="slideshow-caption">Young Solar Challenge</p>
+						</div>
+					</div>
+					
+					<a id="prev-slide" onclick="plusSlides(-1, 'prev')">&lt</a>
+					<a id="next-slide" onclick="plusSlides(1, 'next')">&gt</a>
+				</div>
+				<div id="slideshow-dot-container">
+					<span class="slideshow-dot" onclick="currentSlide(1)"></span>
+					<span class="slideshow-dot" onclick="currentSlide(2)"></span>
+					<span class="slideshow-dot" onclick="currentSlide(3)"></span>
+				</div>
+					
+				<h1>Latest blogposts</h1>
+				<p>Currently only available in Dutch.</p>
+				<div id="blog"></div>
+				<p id="blog-referal">Older posts can be found on the <a href="blog.html">blog</a> page.</p>
+			</article>
+		</div>
+
+		<script>
+			includeHTML();
+			loadBlogPosts(3);
+
+			let slideIndex = 1;
+			let autoSlideInterval;
+			showSlides(slideIndex);
+
+			function startAutoSlide() {
+			autoSlideInterval = setInterval(function() {
+				plusSlides(1);
+			}, 3000);
+			}
+
+			function resetAutoSlide() {
+			clearInterval(autoSlideInterval);
+			startAutoSlide();
+			}
+
+			startAutoSlide();
+
+			// Next/previous controls
+			function plusSlides(n) {
+			resetAutoSlide(); // Pause and restart the timer
+			showSlides(slideIndex += n);
+			}
+
+			// Thumbnail image controls
+			function currentSlide(n) {
+			resetAutoSlide(); // Pause and restart the timer
+			showSlides(slideIndex = n);
+			}
+
+			function showSlides(n) {
+			let i;
+			let slides = document.getElementsByClassName("slideshow-slide");
+			let dots = document.getElementsByClassName("slideshow-dot");
+			if (n > slides.length) {slideIndex = 1}
+			if (n < 1) {slideIndex = slides.length}
+			for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";
+			}
+			for (i = 0; i < dots.length; i++) {
+				dots[i].className = dots[i].className.replace(" active", "");
+			}
+			slides[slideIndex-1].style.display = "block";
+			dots[slideIndex-1].className += " active";
+			}
+
+		</script>
+	</body>
+ </html>

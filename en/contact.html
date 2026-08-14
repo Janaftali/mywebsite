@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>JNFeith</title>
+		<link rel="icon" type="image/icon" href="/img/flavico.svg"/>
+		<link rel="stylesheet" href="/css/styles.css">
+		<script src="/includes.js"></script>
+		<script src="https://forminit.com/sdk/v1/forminit.js"></script>
+	</head>
+	
+	<body>
+		<div include-html="/en/header.html"> </div>
+		<main>
+			<div class="pageHead">
+				<img src="/img/Headers/contact.gif" alt="paper airplane" id="contact"></img>
+				<h1>Contact</h1>
+			</div>
+			<article>
+				
+				<h1>Contact me</h1>
+				<p>Fill out this form to contact me. I do not share my address, phone number or e-mail address because of privacy considerations, but you may send me an e-mail through this form.</p>
+				<div class="container">
+					<form id="contact-form" enctype="multipart/form-data">
+						<input name="fi-sender-firstName" placeholder="Name" />
+						<input type="email" name="fi-sender-email" placeholder="Email" />
+						<textarea name="fi-text-message" placeholder="Message"></textarea>
+						<button type="submit">Submit</button>
+						<p id="form-status"></p>
+					</form>
+				</div> 
+			</article>
+		</main>
+		<script>
+			const forminit = new Forminit();
+			const FORM_ID = "94q3rdzq4qs";
+
+			document.getElementById("contact-form").addEventListener("submit", async (e) => {
+				e.preventDefault();
+
+				const formData = new FormData(e.target);
+				const { data, error } = await forminit.submit(FORM_ID, formData);
+
+				const status = document.getElementById("form-status");
+
+				if (error) {
+				status.textContent = error.message;
+				return;
+				}
+
+				status.textContent = "Message sent successfully!";
+				e.target.reset();
+			});
+		</script>
+
+		<script> 
+			includeHTML();
+		</script>
+	</body>
+ </html>

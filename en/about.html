@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>JNFeith</title>
+		<link rel="icon" type="image/icon" href="/img/flavico.svg"/>
+		<link rel="stylesheet" href="/css/styles.css">
+		<script src="/includes.js"></script>
+	</head>
+	
+
+	<body>
+		<div include-html="/en/header.html"> </div>
+		<main>
+			<div class="pageHead">
+				<img src="/img/Headers/about.webp" alt="sunset"></img>
+				<h1>About</h1>
+			</div>
+			<article>
+				<h1>Info</h1>
+				<h2>About</h2>
+				<div class="flex-container">
+					<div><!-- Text on the left side-->
+						<p>I am Nathan and I am studying mechanical engineering at the Delft University of Technology. I like everything that contains even a bit of technology, and I really enjoy finding out how things work. This can be seen in both my hobbies and my work: I like reading, 3D printing and am always looking at how things work. I am a volunteer for the Noorduyn Norseman Foundation where I work on their airplane and I am a video technician in my church.</p>
+						<h2>Facts about me</h2>
+						<p>Some facts about me:</p>
+						<ul>
+							<li><img src="/img/icons/birthday.svg" class="icon" alt="birthday cake"> Birthday: 2006 </li>
+							<li><img src="/img/icons/flag.svg" class="icon" alt="flag"> Country: Netherlands </li>
+							<li><img src="/img/icons/cross.svg" class="icon" alt="cross"> Religion: Christian </li>
+							<li><img src="/img/icons/tools.svg" class="icon" alt="tools"> Study: Mechanical Engineering </li>
+							<li><img src="/img/icons/vertical.svg" class="icon" alt="vertical arrow"> Length: 1.90m</li>
+							<li><img src="/img/icons/coffee.svg" class="icon" alt="coffee"> And I like to drink coffee.</li>
+						</ul>
+						<img src="/img/gallery/coffee.png" class="gif" alt="coffee machine">
+						<img src="/img/gallery/3dprinter.gif" class="gif" alt="3D printer">>
+					</div>
+
+					<div id="about-image-container"><!-- Box on the right side-->
+						<img src="/img/Pasfoto.jpg" alt="person"  style="width: 250px; border: 1px solid black;">
+						<p>There could be a picture of me here, but for privacy reasons, I won't share any pictures of myself on this website.</p>
+					</div>
+				</div>
+
+				<h2>Hobbies</h2>
+				<div class="flex-container">
+					<div>
+						<p>I have many interests, but these are the things that I enjoy doing the most in my spare time:</p>
+						<ul>
+							<li>Reading</li>
+							<li>Designing and building things</li>
+							<li>Learn new things</li>
+							<li>3D printing</li>
+							<li>Walking</li>
+							<li>Cycling</li>
+						</ul>
+						<p>Sometimes, I like play a computer game. A list of games that I enjoy can be found under <a href="links.html#games" title="View games">links</a>.
+					</div>
+					<img src=/img/gallery/about.gif alt="gears" style="width: 400px; height: 100%; padding: 10px;"></img>
+				</div>
+
+
+				<h2>Strengths and weaknesses</h2>
+				<p>Self-reflection is important. Throughout the years I have gotten to know myself better and better, and based on that knowledge, I have made a list with my strengths and weaknesses. Undoubtedly, more points could be added in both categories.</p>
+				<div class="center">
+					<table>
+						<tr>
+							<th>Strengths</th>
+							<th>Weaknesses</th>
+						</tr>
+						<tr>
+							<td>I am very confident</td>
+							<td>Ia am very stubborn</td>
+						</tr>
+						<tr>
+							<td>I am very serious</td>
+							<td>I can be insensitive</td>
+						</tr>
+						<tr>
+							<td>I am loyal</td>
+							<td>I will not let things go easily</td>
+						</tr>
+						<tr>
+							<td>I set high standards for myself</td>
+							<td>I am not easily satisfied</td>
+						</tr>
+						<tr>
+							<td>I can work independently</td>
+							<td>I am not the best at working together</td>
+						</tr>
+					</table>
+				</div>
+				<div>
+					<p></p>
+				</div>
+
+				<h2>Extra information</h2>
+				<div class="dropdown">
+					<button id="dropdown-name" onclick="dropdown('name')"><b>'J' NFeith? ◁</b></button>
+					<div id="name" style="display: none;">
+						<div style="display: flex;" >
+							<img src=/img/icons/logo.svg alt="JNF" style="width: 200px; height: 100%; margin: 10px;"></img>
+							<p>The domain name of this website is 'jnfeith'. The J is my baptismal name, Jacob. Usually this would be the middle name, but I have been registered as Jacob Nathan. The logo of this website is a stylized version of my signature, that consists of my initials: JNF.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="dropdown">
+					<button id="dropdown-telefoon" onclick="dropdown('telefoon')"><b>My phone ◁</b></button>
+					<div id="telefoon" style="display: none;">
+						<div style="display: flex;" >
+							<img src=/img/phone.webp alt="phone" style="width: 200px; height: 100%;"></img>
+							<p>I have not used a smartphone since 2020, and am the proud owner of this Nokia. It is very quiet without a smartphone, and if people really need me, they will call. I can still perform any function that a smartphone does on my laptop.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="dropdown">
+					<button id="dropdown-faith" onclick="dropdown('faith')"><b>Statement of faith ◁</b></button>
+					<div id="faith" style="display: none;">
+						<p>This text, the Nicene Creed, sums up what I believe as a Christian:</p>
+						<ul><il><p>
+							We believe in one God,<br>the Father almighty,<br>maker of heaven and earth,<br>of all things visible and invisible.<br><br>And in one Lord Jesus Christ,<br>the only Son of God,<br>begotten from the Father before all ages,<br>God from God,<br>Light from Light,<br>true God from true God,<br>begotten, not made;<br>of the same essence as the Father.<br>Through him all things were made.<br>For us and for our salvation<br>he came down from heaven;<br>he became incarnate by the Holy Spirit and the virgin Mary,<br>and was made human.<br>He was crucified for us under Pontius Pilate;<br>he suffered and was buried.<br>The third day he rose again, according to the Scriptures.<br>He ascended to heaven<br>and is seated at the right hand of the Father.<br>He will come again with glory<br>to judge the living and the dead.<br>His kingdom will never end.<br><br>And we believe in the Holy Spirit,<br>the Lord, the giver of life.<br>He proceeds from the Father and the Son,<br>and with the Father and the Son is worshiped and glorified.<br>He spoke through the prophets.<br>We believe in one holy catholic and apostolic church.<br>We affirm one baptism for the forgiveness of sins.<br>We look forward to the resurrection of the dead,<br>and to life in the world to come. Amen.
+						</p></il></ul>
+					</div>
+				</div>
+			</article>
+			<div class="divider"></div>
+			<article>
+				<h1 id="site-info">This website</h1>
+				<h2>Info</h2>
+				<p>I have programmed this website myself using VScode. I started coding in July 2026. Some pieces of code are modified snippets from <a href="https://www.w3schools.com/" title="Visit website">w3schools</a>. I have consulted this website numerous times in the making of this website; I am grateful for the existence of this excellent website. <br>No code on this website comes directly from AI, but AI has been used to locate some bugs in the JavaScript code. Feel free to use parts of the code on this website, as long as it is not copied completely to  use as a template.</p>
+				<h2>Images</h2>
+				<p>All drawings and most of the pictures on this website have been made by myself. Some pictures have been made by people I know personally. I make my drawings in paint.net or inkscape.</p>
+				<p></p>
+				<div class="buttonwall">
+					<a href="https://notbyai.fyi/" title="Info about badge"><img src=/img/icons/Scripted-By-a-Human-Not-By-AI-Badge-white.svg alt="scripted by a human, not by AI" class="button"></a>
+					<a><img src=/img/buttons/bestvieweddesktop.gif alt="best viewed on desktop" class="button"></img></a>
+					<a href="https://w3schools.com/" title="Learn HTML"><img src=/img/icons/html-css-js.webp alt="logo html, css and js" height="75px"></img></a>
+					<a href="https://code.visualstudio.com/" title="Download Visual Studio Code"><img src=/img/buttons/vscbutton.gif alt="made using VScode" class="button"></img></a>
+					<a href="https://creativecommons.org/cc-licenses/" title="Info about license"><img src=/img/buttons/cc-by-sa.png alt="cc-by-sa" class="button"></img></a>
+				</div>
+			</article>
+		</main>
+		<script>
+			includeHTML();
+			loadButtons();
+		</script>
+	</body>
+ </html>

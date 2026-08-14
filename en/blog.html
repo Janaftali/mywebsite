@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>JNFeith</title>
+		<link rel="icon" type="image/icon" href="/img/flavico.svg"/>
+		<link rel="stylesheet" href="/css/styles.css">
+		<script src="/includes.js"></script>
+	</head>
+	
+	<body>
+		<div include-html="/en/header.html"> </div>
+		<main>
+			<div class="pageHead">
+				<img src="../img/Headers/Blog.webp" alt="notebook"></img>
+				<h1>Blog</h1>
+			</div>
+
+			<article>
+				<h1>Blog</h1>
+				<p>All blogposts can be found on this page.</p>
+				<div id="blog"></div>
+			</article>
+		</main>
+		<script>
+			includeHTML();
+			loadBlogPosts(10);
+		</script>
+	</body>
+ </html>
