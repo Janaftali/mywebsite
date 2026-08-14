@@ -100,7 +100,7 @@ header{
 }
 
 .language{
-  display: none; /* display: flex to enable*/
+  display: flex; /* display: flex to enable*/
   margin:30px;
   align-items: center;
 }
@@ -316,16 +316,23 @@ button[type=submit]:hover {
   width: 100%;
 }
 
-#blog-referal{
-  text-align: center;
-}
-
 .container {
   padding-left: 20px;
   width: 80%;
 }
 .buttonwall{
   text-align: center;
+}
+.gif{
+  height: 200px;
+  image-rendering: pixelated;
+}
+#about-image-container{
+  background-color: #eee;
+  margin: 20px; text-align: center;
+  height: min-content;
+  width: min-content;
+  padding: 15px;
 }
 
 .button{
