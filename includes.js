@@ -34,7 +34,8 @@ function loadBlogPosts(amount) {
       const postName = `../posts/post${i}.html`;
       
       const res = await fetch(postName);
-      if (!res.ok) continue;
+      console.clear();
+      if(!res.ok){  continue; }
 
       let html = await res.text();
       html = html.replace(/src=/g, "src=../posts/");
