@@ -21,7 +21,7 @@ nav {
 }
 
 p{
-  max-width: 1000px;
+  max-width: 1100px;
 }
 
 nav ul {
@@ -268,7 +268,6 @@ button[type=submit]:hover {
 }
 
 .post {
-  display: flex;
   margin: 20px;
   padding: 10px;
   background-color: white;
@@ -286,10 +285,12 @@ button[type=submit]:hover {
   font-weight: bold;
   display: block;
 }
+.post-content{
+  display: flex;
+}
 .post img{
-  margin: 5px;
   border: 1px solid black;
-  height: 200px;
+  height: 300px;
   object-fit: cover;
 }
 .post p{
@@ -345,6 +346,7 @@ button[type=submit]:hover {
 }
 
 @media only screen and (max-width: 1200px) {
+  .post-content {display: block;}
   .grid-column {
     flex: 33.3%;
     max-width: 33.3%;
@@ -352,7 +354,7 @@ button[type=submit]:hover {
 }
 
 @media only screen and (max-width: 1000px) {
-  .post {display: block;}
+
   :root {  --navbar-width: 150px;}
   .flex-container{flex-direction: column;}
   .grid-column {
@@ -372,7 +374,7 @@ button[type=submit]:hover {
 }
 
 @media only screen and (max-width: 700px) {
-  .post img{width: 50vw;}
+  .post img{width: 100%;}
   .grid-column {
     flex: 100%;
     max-width: 100%;
