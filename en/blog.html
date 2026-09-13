@@ -19,13 +19,24 @@
 			</div>
 			<article>
 				<h1>Blog</h1>
-				<p>All blog posts can be found on this page. Currently only available in Dutch.</p>
+				<p>All blog posts can be found on this page. Currently only available in Dutch. <button onclick="copyToClipboard('https:\/\/jnfeith.nl/feed.xml')"><b>Copy RSS link <img src="/img/icons/rss-logo.svg" style="color: white; background-color: orange; padding: 4px; border-radius: 4px;" height="25px"></b></button></p>
+				
 				<div id="feed-box"></div>
 			</article>
 		</main>
 		<script>
 			includeHTML();
 			loadBlogPosts(10);
+
+			function copyToClipboard(link){
+				var inputc = document.body.appendChild(document.createElement("input"));
+				inputc.value = link;
+				inputc.focus();
+				inputc.select();
+				document.execCommand('copy');
+				inputc.parentNode.removeChild(inputc);
+				alert("RSS link Copied.");
+			}
 		</script>
 	</body>
  </html>

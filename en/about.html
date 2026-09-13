@@ -13,10 +13,10 @@
 	<body>
 		<div include-html="/en/header.html"> </div>
 		<main>
-			<div class="pageHead">
+			<div><div class="pageHead">
 				<img src="/img/Headers/about.webp" alt="sunset"></img>
 				<h1>About</h1>
-			</div>
+			</div></div>
 			<article>
 				<h1>Info</h1>
 				<h2>About</h2>
@@ -99,22 +99,29 @@
 				<div class="dropdown">
 					<button id="dropdown-name" onclick="dropdown('name')"><b>'J' NFeith? ◁</b></button>
 					<div id="name" style="display: none;">
-						<div style="display: flex;" >
-							<img src=/img/icons/logo.svg alt="JNF" style="width: 200px; height: 100%; margin: 10px;"></img>
-							<p>The domain name of this website is 'jnfeith'. The J is my baptismal name, Jacob. Usually this would be the middle name, but I have been registered as Jacob Nathan. The logo of this website is a stylized version of my signature, that consists of my initials: JNF.</p>
-						</div>
+						<p>The domain name of this website is 'jnfeith'. The J is my baptismal name, Jacob. Usually this would be the middle name, but I have been registered as Jacob Nathan. The logo of this website is a stylized version of my signature, that consists of my initials: JNF.</p>
+						<img src=/img/icons/logo.svg alt="JNF" style="width: 150px; height: 100%; margin: 10px;"></img>
 					</div>
 				</div>
 
 				<div class="dropdown">
 					<button id="dropdown-telefoon" onclick="dropdown('telefoon')"><b>My phone ◁</b></button>
 					<div id="telefoon" style="display: none;">
-						<div style="display: flex;" >
-							<img src=/img/phone.webp alt="phone" style="width: 200px; height: 100%;"></img>
-							<p>I have not used a smartphone since 2020, and am the proud owner of this Nokia. It is very quiet without a smartphone, and if people really need me, they will call. I can still perform any function that a smartphone does on my laptop.</p>
+						<p>I have not had a smartphone since 2020, and am the proud owner of this Nokia. It is very quiet without a smartphone, and if people really need me, they will call. I can still perform any function that a smartphone does on my laptop.</p>
+						<div style="display: flex;">
+							<div>
+								<img src=/img/phone.webp alt="phone" style="max-height: 350px; object-fit: contain;"></img>
+								<p>2020-2026</p>
+							</div>
+							<div>
+								<img src=/img/phone-2.webp alt="phone" style="max-height: 350px; object-fit: contain;"></img>
+								<p>2026-present</p>
+							</div>
 						</div>
 					</div>
 				</div>
+
+				
 
 				<div class="dropdown">
 					<button id="dropdown-faith" onclick="dropdown('faith')"><b>Statement of faith ◁</b></button>
