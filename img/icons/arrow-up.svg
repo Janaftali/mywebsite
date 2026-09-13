@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+
+<svg
+   width="507.55801"
+   height="507.55798"
+   viewBox="0 0 15.22674 15.22674"
+   fill="none"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="arrow-up.svg"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:zoom="0.91625"
+     inkscape:cx="206.82128"
+     inkscape:cy="339.97271"
+     inkscape:window-width="1920"
+     inkscape:window-height="1111"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="Arrow / Arrow_Up_LG" />
+  <g
+     id="Arrow / Arrow_Up_LG"
+     transform="translate(-5.8,-1.8)">
+    <path
+       id="Vector"
+       d="M 13.41337,3 8.4133702,8 m 4.9999998,-5 5,5 m -5,-5 v 12.826739"
+       stroke="#000000"
+       stroke-width="2"
+       stroke-linecap="round"
+       stroke-linejoin="round"
+       sodipodi:nodetypes="cccccc"
+       style="stroke-width:2.4;stroke-dasharray:none" />
+  </g>
+</svg>
