@@ -15,7 +15,7 @@
   <item>
     <title>Uitzicht over wenen</title>
     <link>https://jnfeith.nl/posts/leopoldsberg.txt</link>
-    <enclosure url="https://jnfeith.nl/posts/leopoldsberg2.webp" length="230324" type="image/webp" />
+    <enclosure url="https://jnfeith.nl/posts/leopoldsberg2.webp" length="300000" type="image/webp" />
     <description>Wandeling op de Leopoldsberg</description>
     <pubDate>13 Sept 2026</pubDate>
   </item>
@@ -23,11 +23,7 @@
   <item>
     <title>Erasmus activiteit</title>
     <link>https://jnfeith.nl/posts/eerste-erasmus-activiteit.txt</link>
-    <image>
-      <url>https://jnfeith.nl/posts/strassenbahnarbeiten.webp</url>
-      <title>Tramwerkzaamheden</title>
-      <link>https://jnfeith.nl/index.html</link>
-    </image>
+    <enclosure url="https://jnfeith.nl/posts/strassenbahnarbeiten.webp" length="300000" type="image/webp" />
     <description>De eerste erasmus activiteit</description>
     <pubDate>08 Sept 2026</pubDate>
   </item>
@@ -35,11 +31,7 @@
   <item>
     <title>Eerste week in Wenen</title>
     <link>https://jnfeith.nl/posts/eerste-week-wenen.txt</link>
-    <image>
-      <url>https://jnfeith.nl/posts/ein_woche_wien.webp</url>
-      <title>Schloss Schönbrunn</title>
-      <link>https://jnfeith.nl/index.html</link>
-    </image>
+    <enclosure url="https://jnfeith.nl/posts/ein_woche_wien.webp" length="300000" type="image/webp" />
     <description>Eerste week in wenen</description>
     <pubDate>06 Sept 2026</pubDate>
   </item>
@@ -54,11 +46,7 @@
   <item>
     <title>Mechanisch Erfgoed Centrum</title>
     <link>https://jnfeith.nl/posts/mechanisch-erfgoed-centrum.txt</link>
-    <image>
-      <url>https://jnfeith.nl/posts/mechanisch-erfgoed-centrum.webp</url>
-      <title>Mechanisch Erfgoed Centrum</title>
-      <link>https://jnfeith.nl/index.html</link>
-    </image>
+    <enclosure url="https://jnfeith.nl/posts/mechanisch-erfgoed-centrum.webp" length="300000" type="image/webp" />
     <description>Bezoek aan het Mechanisch Erfgoed Centrum in Dronten</description>
     <pubDate>15 Aug 2026</pubDate>
   </item>
@@ -66,11 +54,7 @@
   <item>
     <title>Zuiderzee Museum</title>
     <link>https://jnfeith.nl/posts/zuiderzee-museum.txt</link>
-    <image>
-      <url>https://jnfeith.nl/posts/zuiderzeemuseum.webp</url>
-      <title>Zuiderzee Museum</title>
-      <link>https://jnfeith.nl/index.html</link>
-    </image>
+    <enclosure url="https://jnfeith.nl/posts/zuiderzeemuseum.webp" length="300000" type="image/webp" />
     <description>Bezoek aan het Zuiderzee Museum in Enkhuizen</description>
     <pubDate>01 Aug 2026</pubDate>
   </item>
@@ -78,11 +62,7 @@
   <item>
     <title>Hamburg</title>
     <link>https://jnfeith.nl/posts/hamburg.txt</link>
-    <image>
-      <url>https://jnfeith.nl/posts/hamburg.webp</url>
-      <title>Uitzicht Hamburg</title>
-      <link>https://jnfeith.nl/index.html</link>
-    </image>
+    <enclosure url="https://jnfeith.nl/posts/hamburg.webp" length="300000" type="image/webp" />
     <description>Ik ben de afgelopen week voor enkele dagen naar Hamburg geweest.</description>
     <pubDate>01 Aug 2026</pubDate>
   </item>
@@ -97,11 +77,7 @@
   <item>
     <title>Camera</title>
     <link>https://jnfeith.nl/posts/camera.txt</link>
-    <image>
-      <url>https://jnfeith.nl/posts/Kerk.JPG</url>
-      <title>Kerk</title>
-      <link>https://jnfeith.nl/index.html</link>
-    </image>
+    <enclosure url="https://jnfeith.nl/posts/Kerk.JPG" length="300000" type="image/webp" />
     <description>Experimenteren met mijn nieuwe camera.</description>
     <pubDate>16 Jul 2026</pubDate>
   </item>
@@ -109,11 +85,7 @@
   <item>
     <title>Website</title>
     <link>https://jnfeith.nl/posts/website.txt</link>
-    <image>
-      <url>https://jnfeith.nl/posts/Website.png</url>
-      <title>Website screenshot</title>
-      <link>https://jnfeith.nl/index.html</link>
-    </image>
+    <enclosure url="https://jnfeith.nl/posts/Website.png" length="300000" type="image/webp" />
     <description>Ik heb verder gewerkt aan mijn website.</description>
     <pubDate>13 Jul 2026</pubDate>
   </item>
@@ -121,11 +93,7 @@
   <item>
     <title>Test Post</title>
     <link>https://jnfeith.nl/posts/test-post.txt</link>
-    <image>
-      <url>https://jnfeith.nl/posts/26-07-13.jpg</url>
-      <title>Kamer</title>
-      <link>https://jnfeith.nl/index.html</link>
-    </image>
+    <enclosure url="https://jnfeith.nl/posts/26-07-13.jpg" length="300000" type="image/webp" />
     <description>Dit is een test post.</description>
     <pubDate>13 Jul 2026</pubDate>
   </item>

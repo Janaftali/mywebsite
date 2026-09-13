@@ -15,7 +15,7 @@ function parseRSS(doc) {
   return items.map(item => ({
     title: item.querySelector("title")?.textContent ?? "(No title)",
     link: item.querySelector("link")?.textContent ?? "#",
-    image: item.querySelector("url")?.textContent ?? "#",
+    image: item.querySelector("enclosure")?.getAttribute("url") ?? "#",
     date: new Date(item.querySelector("pubDate")?.textContent ?? 0)
   }));
 }
@@ -49,6 +49,7 @@ function parseFeed(doc) {
     //Add the title to post
     const title = document.createElement("h2");
     title.textContent = item.title;
+    title.id = item.title.replace(/ /g,"-");
 
     //Add the date to post
     const dateSpan = document.createElement("span");
@@ -62,18 +63,17 @@ function parseFeed(doc) {
     const content = document.createElement("div");
     content.className = "post-content";
 
-    //Add the content to post
+    //Generate text
     const text = document.createElement("p");
     const res = await fetch(item.link);
     if(!res.ok){  continue; }
     text.textContent = await res.text();;
 
-    //Add image to post
+    //Generate image
     const image = document.createElement("img");
-    console.log(item.image)
     image.src = item.image
 
-    
+    //Add image and text to content
     content.appendChild(text);
     content.appendChild(image)
 
