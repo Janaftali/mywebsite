@@ -13,7 +13,7 @@ function parseRSS(doc, number) {
   const items = [...doc.querySelectorAll("item")].slice(0, number);
   return items.map(item => ({
     title: item.querySelector("title")?.textContent ?? "(No title)",
-    link: item.querySelector("link")?.textContent ?? "#",
+    text: item.querySelector("description")?.textContent ?? "#",
     image: item.querySelector("enclosure")?.getAttribute("url") ?? "#",
     date: new Date(item.querySelector("pubDate")?.textContent ?? 0)
   }));
@@ -60,9 +60,7 @@ async function loadBlogPosts(number){
 
     //Add text to content
     const text = document.createElement("p");
-    const res = await fetch(item.link);
-    if(!res.ok){  continue; }
-    text.textContent = await res.text();;
+    text.textContent = item.text;
     content.appendChild(text);
 
     //Add image to content
