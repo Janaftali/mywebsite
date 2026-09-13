@@ -73,7 +73,14 @@ nav ul li p{
   display: block;
 }
 
-#bottom-nav{
+#bottom-nav-wide{
+  position: fixed;
+  width: var(--navbar-width);
+  bottom: 0px;
+  z-index: 15;
+}
+#bottom-nav-narrow{
+  display: none;
   position: fixed;
   width: var(--navbar-width);
   bottom: 0px;
@@ -96,13 +103,21 @@ header{
 	height: var(--header-height);
 	color: rgb(255, 255, 255);
 	background-color: #003399;
-  border-bottom: 10px solid white;
+  border-bottom: 3px solid rgb(61, 61, 61);
 }
 
 .language{
   display: flex; /* display: flex to enable*/
   margin:30px;
   align-items: center;
+}
+.language button{
+  padding: 5px;
+}
+.flag{
+  height: 25px;
+  border: 1px solid black;
+  image-rendering: crisp-edges;
 }
 
 .center {
@@ -122,14 +137,6 @@ header{
 .icon{
   height: 20px;
   object-fit: contain;
-}
-
-.flag{
-  height: 21px;
-  padding: 0;
-  margin: 3px;
-  border: 1px solid black;
-  image-rendering: crisp-edges;
 }
 
 li{
@@ -178,7 +185,7 @@ main{
   text-align: center;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -100%);
 }
 
 .divider{
@@ -271,7 +278,6 @@ button[type=submit]:hover {
   margin: 20px;
   padding: 10px;
   background-color: white;
-  max-width: 1200px;
 }
 .post h2{ 
   border: none;
@@ -330,7 +336,7 @@ button[type=submit]:hover {
   background-color: #eee;
   margin: 20px; text-align: center;
   height: min-content;
-  width: min-content;
+  width: 400px;
   padding: 15px;
 }
 #blog-referral{
@@ -343,6 +349,8 @@ button[type=submit]:hover {
   display: inline;
   image-rendering: pixelated;
 }
+
+#warning{display: none;}
 
 @media only screen and (max-width: 1200px) {
   .post-content {display: block;}
@@ -373,7 +381,7 @@ button[type=submit]:hover {
 }
 
 @media only screen and (max-width: 700px) {
-  .post img{width: 100%; height: 100%;}
+  .post img{width: 100%; max-height: 100%;}
   .grid-column {
     flex: 100%;
     max-width: 100%;
@@ -387,11 +395,19 @@ button[type=submit]:hover {
   :root {
   --navbar-width: 60px;
   }
-  #bottom-nav{
+  #bottom-nav-wide{
     display: none;
   }
+  #bottom-nav-narrow{
+    display: block;
+  }
+
   #siteTitle{
     display: none;
   }
-  
+  #about-image-container{
+    width: 90%;}
+  #warning{
+    display: block;
+  }
 }
