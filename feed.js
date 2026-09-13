@@ -1,7 +1,6 @@
 const feeds = [
   { url: '/feed.xml'}
 ];
-const ITEMS_PER_FEED = 11;
 
 async function fetchFeed(url) {
   const res = await fetch(url);
@@ -10,8 +9,8 @@ async function fetchFeed(url) {
   return parser.parseFromString(text, "text/xml");
 }
 
-function parseRSS(doc) {
-  const items = [...doc.querySelectorAll("item")].slice(0, ITEMS_PER_FEED);
+function parseRSS(doc, number) {
+  const items = [...doc.querySelectorAll("item")].slice(0, number);
   return items.map(item => ({
     title: item.querySelector("title")?.textContent ?? "(No title)",
     link: item.querySelector("link")?.textContent ?? "#",
@@ -20,17 +19,13 @@ function parseRSS(doc) {
   }));
 }
 
-function parseFeed(doc) {
-  return parseRSS(doc);
-}
-
-(async () => {
+async function loadBlogPosts(number){
   const allItems = [];
 
   for (const { url, label } of feeds) {
     try {
       const doc = await fetchFeed(url);
-      const items = parseFeed(doc).map(item => ({ ...item, source: label }));
+      const items = parseRSS(doc, number).map(item => ({ ...item, source: label }));
       allItems.push(...items);
     } catch (err) {
       console.error(`Error parsing ${url}:`, err);
@@ -63,19 +58,19 @@ function parseFeed(doc) {
     const content = document.createElement("div");
     content.className = "post-content";
 
-    //Generate text
+    //Add text to content
     const text = document.createElement("p");
     const res = await fetch(item.link);
     if(!res.ok){  continue; }
     text.textContent = await res.text();;
-
-    //Generate image
-    const image = document.createElement("img");
-    image.src = item.image
-
-    //Add image and text to content
     content.appendChild(text);
-    content.appendChild(image)
+
+    //Add image to content
+    if(item.image != '#'){
+      const image = document.createElement("img");
+      image.src = item.image
+      content.appendChild(image)
+    }
 
     //Add all elements to the post
     post.appendChild(title);
@@ -88,4 +83,4 @@ function parseFeed(doc) {
 
   document.getElementById("feed-box").innerHTML = "";
   document.getElementById("feed-box").appendChild(blog);
-})();
+};

@@ -25,20 +25,23 @@ function includeHTML() {
   }
 };
 
-function loadBlogPosts(amount) {
+function loadButtons(){
   return (async () => {
-    const blog = document.getElementById("blog");
-    let loadedPosts = 0;
+    const buttonwall = document.getElementById("buttonwall");
+    const files = await readdir(dir);
+    console.log(files);
 
-    for (let i = 25; i >= 0 && loadedPosts < amount; i--) {
-      const postName = `../posts/post${i}.html`;
+    for (let i = 9; i >= 0 && loadedPosts < amount; i--) {
       
       const res = await fetch(postName);
-      console.clear();
-      if(!res.ok){  continue; }
+      if (!res.ok) continue;
 
       let html = await res.text();
       html = html.replace(/src=/g, "src=../posts/");
+
+      if (html.length > 100){
+        
+      }
 
       const post = document.createElement("div");
       post.classList.add("post");
@@ -84,31 +87,8 @@ function dropdown(content){
   }
 }
 
-function displayProject(projectName){
-  console.log(projectName)
-  var projectFrame = document.getElementById("projectFrame");
-  projectFrame.style.display="block";
-
-  var iframe = document.getElementById("projectiframe");
-  iframe.src= projectName;
-}
-
-function closeProject(){
-  var projectFrame = document.getElementById("projectFrame");
-  projectFrame.style.display="none";
-}
-
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-}
-
-function restartGif(imgElement) { 
-  let element = document.getElementById(imgElement);
-  console.log('GIF reloaded.');
-  if (element) {
-     var imgSrc = element.src;
-     element.src = imgSrc; 
-  }
 }
