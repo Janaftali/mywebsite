@@ -13,6 +13,7 @@ body {
   background-position: var(--navbar-width);
   font-family: Bahnschrift, Arial;
   margin: 0;
+  overscroll-behavior-y: none;
 }
 
 nav {
@@ -33,6 +34,7 @@ nav ul {
   height: 100vh; /* Full height */
   background-color: #ddd;
   z-index: 10;
+  white-space: nowrap;
 }
 nav ul li p{
   display: inline;
@@ -91,6 +93,10 @@ nav ul li p{
   display: block;
   padding: 10px;
   font-size: 15px;
+  border: 2px outset #ccc;
+}
+#go-up:hover{
+  border: 2px inset #ccc;
 }
 
 header{
@@ -154,15 +160,12 @@ button:hover {
 
 #siteTitle{
   margin: 0px 30px 0px 30px;
-  font-size: 250%;
+  font-weight: 600;
+  font-size: 60px;
   font-family: Bahnschrift, Arial;
 }
 
-main{
-  margin-top:var(--header-height);
-  margin-left: var(--navbar-width);
-  overflow: hidden;
-}
+
 
 .pageHead{
   position: relative;
@@ -175,7 +178,7 @@ main{
   height: 100%;
 }
 
-.pageHead h1{
+.pageHead span{
 	position: absolute;
   padding: 15px;
   border: none;
@@ -185,7 +188,7 @@ main{
   text-align: center;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -100%);
+  transform: translate(-50%, -50%);
 }
 
 .divider{
@@ -203,27 +206,39 @@ main{
   font-size: 20px;
 }
 
-article{
+main{
+  margin-top:var(--header-height);
+  margin-left: var(--navbar-width);
+  overflow: hidden;
   position: relative;
-  display: block;
-  margin-bottom: 20px;
 }
 
-article h1 {
+h1 {
   color: black;
   background-color: white;
-  border-bottom: 5px double black;
+  border-bottom: 2px solid black;
   margin: 0;
   padding: 20px;
   padding-left: 40px;
   font-family: Arial;
 }
+h1:before{
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  clip-path: polygon(0 0, 0 20px, 20px 20px, 20px 0);
+  transform: translate(0, -20px);
 
-article h2{
+}
+
+h2{
   margin: 5px 0px 0px 10px;
 }
 
-article p {
+p {
 	color: black;
   padding: 10px 15px 5px 15px;
   margin: 0px;
@@ -277,7 +292,8 @@ button[type=submit]:hover {
 .post {
   margin: 20px;
   padding: 10px;
-  background-color: white;
+  max-width: 1200px;
+  background: linear-gradient(225deg, transparent 30px, white 0);
 }
 .post h2{ 
   border: none;
@@ -319,6 +335,7 @@ button[type=submit]:hover {
   margin-top: 8px;
   vertical-align: middle;
   width: 100%;
+  border: 1px solid black; padding: 5px; background-color: white;
 }
 
 .container {
@@ -352,6 +369,12 @@ button[type=submit]:hover {
 
 #warning{display: none;}
 
+#rss-button{
+  height: 30px;
+  border-radius: 7px;
+  float: right;
+}
+
 @media only screen and (max-width: 1200px) {
   .post-content {display: block;}
   .grid-column {
@@ -361,14 +384,13 @@ button[type=submit]:hover {
 }
 
 @media only screen and (max-width: 1000px) {
-
   :root {  --navbar-width: 150px;}
   .flex-container{flex-direction: column;}
   .grid-column {
     flex: 50%;
     max-width: 50%;
   }
-  .pageHead h1{
+  .pageHead span{
 	font-size: 10vw;
   }
   .pageHead{
