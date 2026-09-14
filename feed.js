@@ -19,13 +19,29 @@ function parseRSS(doc, number) {
   }));
 }
 
+function parseAtom(doc, number) {
+  const entries = [...doc.querySelectorAll("entry")].slice(0, number);
+  return entries.map(entry => ({
+    title: entry.querySelector("title")?.textContent ?? "(No title)",
+    text: entry.querySelector("description")?.textContent ?? "#",
+    image: entry.querySelector("enclosure")?.getAttribute("url") ?? "#",
+    date: new Date(entry.querySelector("pubDate")?.textContent ?? 0)
+  }));
+}
+
+function parseFeed(doc, number) {
+  if (doc.querySelector("item")) return parseRSS(doc, number);
+  if (doc.querySelector("entry")) return parseAtom(doc, number);
+  return [];
+}
+
 async function loadBlogPosts(number){
   const allItems = [];
 
   for (const { url, label } of feeds) {
     try {
       const doc = await fetchFeed(url);
-      const items = parseRSS(doc, number).map(item => ({ ...item, source: label }));
+      const items = parseFeed(doc, number).map(item => ({ ...item, source: label }));
       allItems.push(...items);
     } catch (err) {
       console.error(`Error parsing ${url}:`, err);
@@ -38,7 +54,7 @@ async function loadBlogPosts(number){
   const blog = document.createElement("div");
   for (const item of allItems) {
     //Create a post for each item in xml
-    const post = document.createElement("div");
+    const post = document.createElement("article");
     post.className = "post";
 
     //Add the title to post
@@ -60,6 +76,7 @@ async function loadBlogPosts(number){
 
     //Add text to content
     const text = document.createElement("p");
+    console.log(item.text)
     text.textContent = item.text;
     content.appendChild(text);
 
