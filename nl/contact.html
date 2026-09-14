@@ -15,22 +15,19 @@
 		<main>
 			<div class="pageHead">
 				<img src="/img/Headers/contact.gif" alt="paper airplane" id="contact"></img>
-				<h1>Contact</h1>
+				<span>Contact</span>
 			</div>
-			<article>
-				
-				<h1>Neem contact op</h1>
-				<p>Vul je gegevens in om contact met mij op te nemen. Om privacyredenen deel ik geen adres, telefoon of mailadres, maar via dit formulier kun je mij een mail sturen.</p>
-				<div class="container">
-					<form id="contact-form" enctype="multipart/form-data">
-						<input name="fi-sender-firstName" placeholder="Naam" />
-						<input type="email" name="fi-sender-email" placeholder="Email" />
-						<textarea name="fi-text-message" placeholder="Bericht"></textarea>
-						<button type="submit">Verstuur</button>
-						<p id="form-status"></p>
-					</form>
-				</div> 
-			</article>
+			<h1>Neem contact op</h1>
+			<p>Vul je gegevens in om contact met mij op te nemen. Om privacyredenen deel ik geen adres, telefoon of mailadres, maar via dit formulier kun je mij een mail sturen.</p>
+			<div class="container">
+				<form id="contact-form" enctype="multipart/form-data">
+					<input name="fi-sender-firstName" placeholder="Naam" />
+					<input type="email" name="fi-sender-email" placeholder="Email" />
+					<textarea name="fi-text-message" placeholder="Bericht"></textarea>
+					<button type="submit">Verstuur</button>
+					<p id="form-status"></p>
+				</form>
+			</div>
 		</main>
 		<script>
 			const forminit = new Forminit();
