@@ -15,22 +15,20 @@
 		<main>
 			<div class="pageHead">
 				<img src="/img/Headers/contact.gif" alt="paper airplane" id="contact"></img>
-				<h1>Contact</h1>
+				<span>Contact</span>
 			</div>
-			<article>
 				
-				<h1>Contact me</h1>
-				<p>Fill out this form to contact me. I do not share my address, phone number or e-mail address because of privacy considerations, but you may send me an e-mail through this form.</p>
-				<div class="container">
-					<form id="contact-form" enctype="multipart/form-data">
-						<input name="fi-sender-firstName" placeholder="Name" />
-						<input type="email" name="fi-sender-email" placeholder="Email" />
-						<textarea name="fi-text-message" placeholder="Message"></textarea>
-						<button type="submit">Submit</button>
-						<p id="form-status"></p>
-					</form>
-				</div> 
-			</article>
+			<h1>Contact me</h1>
+			<p>Fill out this form to contact me. I do not share my address, phone number or e-mail address because of privacy considerations, but you may send me an e-mail through this form.</p>
+			<div class="container">
+				<form id="contact-form" enctype="multipart/form-data">
+					<input name="fi-sender-firstName" placeholder="Name" />
+					<input type="email" name="fi-sender-email" placeholder="Email" />
+					<textarea name="fi-text-message" placeholder="Message"></textarea>
+					<button type="submit">Submit</button>
+					<p id="form-status"></p>
+				</form>
+			</div> 
 		</main>
 		<script>
 			const forminit = new Forminit();
