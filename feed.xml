@@ -5,18 +5,26 @@
   <link>https://jnfeith.nl/index.html</link>
   <image>
       <url>https://jnfeith.nl/img/icons/logo.png</url>
-      <title>Logo</title>
+      <title>JNF logo</title>
       <link>https://jnfeith.nl/index.html</link>
     </image>
   <description>Personal blog</description>
   <language>nl</language>
+  
+   <item>
+    <title>Stadswandelingen</title>
+    <link>https://jnfeith.nl/nl/blog.html</link>
+    <enclosure url="https://jnfeith.nl/img/posts/19-sept.webp" length="345000" type="image/webp" />
+    <description>Deze zaterdagmiddag ben ik weer de binnenstad ingegaan, en ik heb wat fotos kunnen maken. De afgelopen week heb ik bijna elke dag wel een wandeling gemaakt op verschillende plekken in de stad en in de omgeving van mijn studentenhuis. Er zijn veel parken, en langs de Donau is ook veel mooie natuur te vinden naast de prachtige gebouwen die overal staan. Vandaag is het me ook eindelijk gelukt om een tweedehands fiets te kopen, dus ik hoop de komende weken nog veel meer te kunnen zien nu ik me nóg makkelijker door de stad kan verplaatsen. Met de fiets kan ik een stuk sneller bij het metrostation komen, want de tram voor mijn flat rijdt tot december niet vanwege werkzaamheden.</description>
+    <pubDate>Sat, 19 Sept 2026 18:57:00 GMT</pubDate>
+  </item>
   
   <item>
     <title>Uitzicht over wenen</title>
     <link>https://jnfeith.nl/nl/blog.html</link>
     <enclosure url="https://jnfeith.nl/img/posts/leopoldsberg2.webp" length="300000" type="image/webp" />
     <description>Vandaag ben ik met een studiegenoot een van de heuvels ten noorden van Wenen op te gaan om de stad van boven te bekijken. Zoals te zien op de foto's is het uitzicht prachtig. Dat het openbaar vervoer in Wenen uitstekend is, wordt weer bevestigd door het feit dat er een bus naar de top van deze heuvel rijdt. Onderweg naar beneden liepen we door de bossen en wijngaarden die daar te vinden zijn, het was een mooie wandeling.</description>
-    <pubDate>Sat, 12 Sept 2026 12:00:00 EST</pubDate>
+    <pubDate>Sat, 12 Sept 2026 12:00:00 GMT</pubDate>
   </item>
   
   <item>
