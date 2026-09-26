@@ -4,12 +4,23 @@
   <title>JNFeith</title>
   <link>https://jnfeith.nl/index.html</link>
   <image>
-      <url>https://jnfeith.nl/img/icons/logo.png</url>
-      <title>JNF logo</title>
-      <link>https://jnfeith.nl/index.html</link>
-    </image>
-  <description>Personal blog</description>
+    <url>https://jnfeith.nl/img/icons/logo.png</url>
+    <title>JNF logo</title>
+    <link>https://jnfeith.nl/index.html</link>
+  </image>
+  <description>Nathan's personal blog</description>
+  <lastBuildDate>Sat, 26 Sep 2026</lastBuildDate>
   <language>nl</language>
+  
+  
+  <item>
+    <title>Avondje uit</title>
+    <link>https://jnfeith.nl/nl/blog.html</link>
+    <enclosure url="https://jnfeith.nl/img/posts/mensch-arger-dich-nicht.webp" length="125000" type="image/webp" />
+    <description>Sinds dit weekend kan ik eindelijk door Wenen fietsen. Daar ben ik heel blij mee, want door naar het metrostation te fietsen bespaar ik meer dan tien minuten op mijn reistijd. Van deze verkorte reistijd kon ik vanmiddag goed gebruik maken omdat ik in het centrum had afgesproken met twee jongens die ik ken van de taalcursus. We hebben wat koffie gedronken bij een café en wat kaartspellen gespeeld. Nadat we avondeten hadden gehaald, sloten we aan bij een grotere groep mensen van de taalcursus. Met zijn allen zijn we naar een klein openluchtconcert gegaan. De muziek interesseerde mij niet zo, maar het was leuk om met zoveel mensen wat te doen. Al met al was dit een hele leuke eerste helft van de week.</description>
+    <pubDate>Wed, 23 Sept 2026 22:30:00 GMT+0200</pubDate>
+  </item>
+  
   <item>
     <title>Wandeling Mödling</title>
     <link>https://jnfeith.nl/nl/blog.html</link>
@@ -39,7 +50,6 @@
     <link>https://jnfeith.nl/nl/blog.html</link>
     <enclosure url="https://jnfeith.nl/img/posts/strassenbahnarbeiten.webp" length="300000" type="image/webp" />
     <description>Vanavond was de eerste bijeenkomst georganiseerd door het Erasmus studentennetwerk. Het was niet veel bijzonders, we hebben gewoon met een grote groep studenten afgesproken in het stadspark. Toch was het leuk, en ik heb veel nieuwe mensen ontmoet uit heel Europa, en veel mensen gesproken die ik ook al op de taalcursus ontmoet heb. Na afloop moest ik wel terug huis lopen vanwege een probleem met de tram zoals te zien op de foto.</description>
-    <pubDate>08 Sept 2026</pubDate>
     <pubDate>Tue, 08 Sept 2026 21:00:00 GMT</pubDate>
   </item>
 
@@ -102,7 +112,7 @@
     <link>https://jnfeith.nl/nl/blog.html</link>
     <enclosure url="https://jnfeith.nl/img/posts/Website.webp" length="300000" type="image/webp" />
     <description>Vandaag heb ik verder gewerkt aan de website, en de blog waar ik gisteren mee begonnen ben doet het eindelijk! Ik ben tevreden met de structuur van de website. Nu de structuur af is, kan ik gaan werken aan de content zoals de projectpagina, links en de over mij sectie. Dat zal nog wel wat tijd kosten, maar het is leuk werk.</description>
-    <pubDate>Mon, 13 Jul 2026 12:00:00 GMT</pubDate>
+    <pubDate>Mon, 13 Jul 2026 12:01:00 GMT</pubDate>
   </item>
 
   <item>
