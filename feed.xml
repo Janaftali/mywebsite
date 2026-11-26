@@ -9,8 +9,16 @@
     <link>https://jnfeith.nl/index.html</link>
   </image>
   <description>Nathan's personal blog</description>
-  <lastBuildDate>Mon, 16 Nov 2026</lastBuildDate>
+  <lastBuildDate>Thu, 26 Nov 2026</lastBuildDate>
   <language>nl</language>
+
+  <item>
+    <title>Eerste sneeuw</title>
+    <link>https://jnfeith.nl/nl/blog.html</link>
+    <enclosure url="https://jnfeith.nl/img/posts/eerste-sneeuw.webp" length="24000" type="image/webp" />
+    <description>Vandaag heeft het hier veel gesneeuwd. Ik vindt het heel leuk om alles zo te zien, zoveel sneeuw zijn we in Nederland niet gewend! Dat betekent ook dat ik niet meer met de fiets naar de universiteit kan, maar gelukkig duurt het OV niet erg veel langer. Ik heb vanmiddag tussen colleges even de tijd genomen om van de sneeuw te genieten in het centrum van Wenen, waar deze foto gemaakt is.</description>
+    <pubDate>Thu, 26 Nov 2026 09:13:00 +0100</pubDate>
+  </item>
 
   <item>
     <title>Budapest</title>
